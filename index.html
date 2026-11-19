@@ -1,0 +1,1609 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>최충익 교수 | 강원대학교 사회과학대학 행정학과 - 학술·정책 포트폴리오 대시보드</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Pretendard"', '"Noto Sans KR"', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            navy: {
+              50: '#f0f4f8',
+              100: '#d9e2ec',
+              200: '#bcccdc',
+              300: '#9fb3c8',
+              400: '#829ab1',
+              500: '#627d98',
+              600: '#486581',
+              700: '#334e68',
+              800: '#243b53',
+              900: '#102a43',
+              950: '#0a1929',
+            },
+            teal: {
+              50: '#f0fdfa',
+              100: '#ccfbf1',
+              500: '#14b8a6',
+              600: '#0d9488',
+              700: '#0f766e',
+              800: '#115e59',
+            }
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    body {
+      font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+      background-color: #f8fafc;
+      color: #0f172a;
+      word-break: keep-all;
+    }
+    .card-elevated {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 4px 20px -2px rgba(16, 42, 67, 0.05), 0 1px 3px 0 rgba(16, 42, 67, 0.03);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+    .card-elevated:hover {
+      box-shadow: 0 10px 28px -4px rgba(16, 42, 67, 0.09), 0 4px 10px -2px rgba(16, 42, 67, 0.04);
+      border-color: #cbd5e1;
+    }
+    .hero-gradient {
+      background: linear-gradient(135deg, #ffffff 0%, #f0f4f8 55%, #f0fdfa 100%);
+    }
+    .nav-pill.active {
+      background-color: #102a43;
+      color: #ffffff;
+      box-shadow: 0 2px 8px rgba(16, 42, 67, 0.18);
+    }
+    /* Custom scrollbar for clean look */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-teal-100 selection:text-navy-900">
+
+  <!-- Sticky Top Navigation Bar -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 gap-4">
+        <a href="#top" class="flex items-center gap-2.5 shrink-0 group">
+          <div class="w-9 h-9 rounded-xl bg-navy-900 text-white flex items-center justify-center font-bold text-sm tracking-tight shadow-sm group-hover:bg-teal-700 transition-colors">
+            KNU
+          </div>
+          <div class="leading-tight">
+            <span class="block text-sm font-bold text-navy-900">최충익 교수</span>
+            <span class="block text-[11px] text-slate-500">강원대학교 사회과학대학 행정학과</span>
+          </div>
+        </a>
+
+        <!-- Desktop / Scrollable Section Jump Navigation -->
+        <nav aria-label="섹션 탐색" class="flex items-center gap-1.5 overflow-x-auto py-1 no-scrollbar">
+          <a href="#overview" data-nav="overview" class="nav-pill active px-3 py-1.5 rounded-full text-xs sm:text-sm font-medium text-slate-600 hover:bg-slate-100 transition whitespace-nowrap">전체 요약</a>
+          <a href="#career" data-nav="career" class="nav-pill px-3 py-1.5 rounded-full text-xs sm:text-sm font-medium text-slate-600 hover:bg-slate-100 transition whitespace-nowrap">학력·경력·서훈</a>
+          <a href="#research-areas" data-nav="research-areas" class="nav-pill px-3 py-1.5 rounded-full text-xs sm:text-sm font-medium text-slate-600 hover:bg-slate-100 transition whitespace-nowrap">전문분야</a>
+          <a href="#books" data-nav="books" class="nav-pill px-3 py-1.5 rounded-full text-xs sm:text-sm font-medium text-slate-600 hover:bg-slate-100 transition whitespace-nowrap">주요 저서 (18)</a>
+          <a href="#papers" data-nav="papers" class="nav-pill px-3 py-1.5 rounded-full text-xs sm:text-sm font-medium text-slate-600 hover:bg-slate-100 transition whitespace-nowrap">학술논문 (122)</a>
+          <a href="#conferences" data-nav="conferences" class="nav-pill px-3 py-1.5 rounded-full text-xs sm:text-sm font-medium text-slate-600 hover:bg-slate-100 transition whitespace-nowrap">학술발표·보고서</a>
+        </nav>
+
+        <div class="hidden xl:flex items-center gap-2 shrink-0">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-navy-50 text-navy-800 border border-navy-100">
+            <span class="w-1.5 h-1.5 rounded-full bg-teal-600"></span>
+            생애업적 기준: 2026. 11. 12.
+          </span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="top" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-20 space-y-12">
+
+    <!-- 1. HERO SECTION & KPI CARDS -->
+    <section id="overview" class="scroll-mt-24">
+      <div class="hero-gradient rounded-3xl border border-slate-200/90 p-6 sm:p-10 shadow-sm relative overflow-hidden">
+        <!-- Subtle decorative geometric accent -->
+        <div class="absolute -right-24 -top-24 w-80 h-80 rounded-full bg-teal-500/5 pointer-events-none"></div>
+        <div class="absolute right-12 -bottom-28 w-72 h-72 rounded-full bg-navy-800/5 pointer-events-none"></div>
+
+        <div class="relative z-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
+          <!-- Left Text Info -->
+          <div class="flex-1 space-y-4">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-navy-900 text-white tracking-wide">
+                강원대학교 사회과학대학 행정학과
+              </span>
+              <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-teal-50 text-teal-800 border border-teal-200/80">
+                기준 시점: 2026년 11월
+              </span>
+              <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-white text-slate-600 border border-slate-200">
+                서울대학교 도시계획학 박사
+              </span>
+            </div>
+
+            <div>
+              <div class="flex flex-wrap items-baseline gap-3">
+                <h1 class="text-3xl sm:text-4xl lg:text-[2.6rem] font-extrabold text-navy-950 tracking-tight">
+                  최충익 <span class="text-xl sm:text-2xl font-bold text-navy-700">교수</span>
+                </h1>
+                <span class="text-sm sm:text-base font-medium text-slate-500 tracking-wide">
+                  Prof. Choongik Choi, Ph.D.
+                </span>
+              </div>
+              <p class="mt-1.5 text-sm sm:text-base font-semibold text-teal-700">
+                강원대학교 사회과학대학 행정학과 교수 (2008~현재) &nbsp;|&nbsp; 재난관리 · 기후변화 거버넌스 · 도시·지역개발 · 환경행정
+              </p>
+            </div>
+
+            <p class="text-slate-700 text-sm sm:text-base leading-relaxed max-w-4xl bg-white/75 backdrop-blur-sm rounded-2xl p-4 sm:p-5 border border-slate-200/70">
+              20년 이상 <strong>재난관리, 기후변화 거버넌스, 도시·지역개발 및 환경행정</strong> 분야를 선도해 온 정책학자입니다. 특히 <strong>데이터 과학(빅데이터·연결망·지수분해·공간분석)</strong>과 <strong>리스크 거버넌스 이론</strong>을 결합하여 지역소멸, 기후불평등, ESG·업무연속성(COOP/BCP), 공공기관 성과관리 등 복합적인 사회문제를 실증적으로 규명하고 실천적 정책 대안을 제시하고 있습니다.
+            </p>
+
+            <!-- Quick Contact & Affiliation Pills -->
+            <div class="flex flex-wrap items-center gap-2.5 pt-1 text-xs sm:text-sm text-slate-600">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white border border-slate-200 shadow-2xs">
+                <svg class="w-4 h-4 text-navy-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                강원특별자치도 춘천시 강원대학길 1 사회과학대학 행정학과
+              </span>
+              <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white border border-slate-200 shadow-2xs">
+                <svg class="w-4 h-4 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                2026 대한민국학술원 우수학술도서 선정 저자
+              </span>
+              <button type="button" onclick="copyProfileSummary()" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-navy-900 hover:bg-navy-800 text-white font-medium transition cursor-pointer shadow-2xs">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"/></svg>
+                프로필 요약 복사
+              </button>
+            </div>
+          </div>
+
+          <!-- Right Profile Avatar Card with Tooltip Guide -->
+          <div class="shrink-0 self-center lg:self-start">
+            <div class="relative group bg-white p-5 rounded-3xl border border-slate-200 shadow-sm w-60 text-center">
+              <div class="relative mx-auto w-32 h-32 rounded-full bg-gradient-to-br from-navy-900 via-navy-800 to-teal-700 p-1 shadow-md">
+                <div id="profile-avatar-container" class="w-full h-full rounded-full bg-navy-900 flex flex-col items-center justify-center text-white overflow-hidden relative">
+                  <!-- Initials & Academic Emblem -->
+                  <span class="text-2xl font-extrabold tracking-wider">최충익</span>
+                  <span class="text-[10px] uppercase tracking-widest text-teal-200 mt-0.5 font-medium">Prof. C. Choi</span>
+                </div>
+                <!-- Academic Badge -->
+                <div class="absolute -bottom-1 -right-1 w-9 h-9 rounded-full bg-teal-600 text-white border-2 border-white flex items-center justify-center shadow" title="서울대학교 도시계획학 박사">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+                </div>
+              </div>
+
+              <div class="mt-3.5">
+                <p class="text-sm font-bold text-navy-900">Dept. of Public Admin.</p>
+                <p class="text-xs text-slate-500 mt-0.5">Kangwon National University</p>
+              </div>
+
+              <!-- Image URL Replacement Tooltip Guide -->
+              <div class="mt-3 pt-2.5 border-t border-slate-100 relative">
+                <button type="button" onclick="togglePhotoGuide()" class="inline-flex items-center gap-1 text-[11px] font-medium text-teal-700 hover:text-teal-800 cursor-pointer">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  프로필 사진 교체 안내
+                </button>
+                <div id="photo-guide-tooltip" class="hidden mt-2 p-2.5 rounded-xl bg-slate-800 text-white text-[11px] text-left leading-relaxed shadow-lg">
+                  HTML 코드 내 <code class="text-teal-300 font-mono">#profile-avatar-container</code> 영역에 <code class="text-teal-300 font-mono">&lt;img src="사진URL"&gt;</code> 태그를 삽입하면 교수님 실제 인물 사진으로 즉시 교체됩니다.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5 Core KPI Summary Cards -->
+        <div class="relative z-10 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3.5 sm:gap-4 mt-8">
+          <div class="bg-white rounded-2xl p-4 sm:p-5 border border-slate-200/90 shadow-2xs hover:border-teal-500/50 transition">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-semibold text-slate-500">연구·교육 경력</span>
+              <span class="px-2 py-0.5 rounded-md text-[10px] font-bold bg-navy-50 text-navy-700">2003~2026</span>
+            </div>
+            <div class="mt-2 flex items-baseline gap-1">
+              <span class="kpi-number text-2xl sm:text-3xl font-extrabold text-navy-900" data-target="22" data-suffix="+">22+</span>
+              <span class="text-sm font-bold text-navy-700">년</span>
+            </div>
+            <p class="mt-1 text-xs text-slate-500">대학·국책·해외 연구기관</p>
+          </div>
+
+          <a href="#papers" class="bg-white rounded-2xl p-4 sm:p-5 border border-slate-200/90 shadow-2xs hover:border-teal-500/50 transition group">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-semibold text-slate-500">학술논문</span>
+              <span class="px-2 py-0.5 rounded-md text-[10px] font-bold bg-teal-50 text-teal-700 group-hover:bg-teal-600 group-hover:text-white transition">전체보기 →</span>
+            </div>
+            <div class="mt-2 flex items-baseline gap-1">
+              <span class="kpi-number text-2xl sm:text-3xl font-extrabold text-teal-700" data-target="122" data-suffix="">122</span>
+              <span class="text-sm font-bold text-slate-700">편</span>
+            </div>
+            <p class="mt-1 text-xs text-slate-500">국내외 주요 학술지 게재</p>
+          </a>
+
+          <a href="#books" class="bg-white rounded-2xl p-4 sm:p-5 border border-slate-200/90 shadow-2xs hover:border-teal-500/50 transition group">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-semibold text-slate-500">주요 저서·역서</span>
+              <span class="px-2 py-0.5 rounded-md text-[10px] font-bold bg-amber-50 text-amber-800">학술원 우수도서</span>
+            </div>
+            <div class="mt-2 flex items-baseline gap-1">
+              <span class="kpi-number text-2xl sm:text-3xl font-extrabold text-navy-900" data-target="18" data-suffix="">18</span>
+              <span class="text-sm font-bold text-slate-700">권</span>
+            </div>
+            <p class="mt-1 text-xs text-slate-500">단독·공저 전문학술 및 교재</p>
+          </a>
+
+          <a href="#conferences" class="bg-white rounded-2xl p-4 sm:p-5 border border-slate-200/90 shadow-2xs hover:border-teal-500/50 transition group">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-semibold text-slate-500">학술대회·포럼</span>
+              <span class="px-2 py-0.5 rounded-md text-[10px] font-bold bg-navy-50 text-navy-700">기조·주제발표</span>
+            </div>
+            <div class="mt-2 flex items-baseline gap-1">
+              <span class="kpi-number text-2xl sm:text-3xl font-extrabold text-navy-900" data-target="142" data-suffix="">142</span>
+              <span class="text-sm font-bold text-slate-700">회</span>
+            </div>
+            <p class="mt-1 text-xs text-slate-500">국내외 학술대회 및 정책포럼</p>
+          </a>
+
+          <a href="#reports-section" class="col-span-2 sm:col-span-1 bg-white rounded-2xl p-4 sm:p-5 border border-slate-200/90 shadow-2xs hover:border-teal-500/50 transition group">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-semibold text-slate-500">정책·연구보고서</span>
+              <span class="px-2 py-0.5 rounded-md text-[10px] font-bold bg-teal-50 text-teal-700">실증·정책과제</span>
+            </div>
+            <div class="mt-2 flex items-baseline gap-1">
+              <span class="kpi-number text-2xl sm:text-3xl font-extrabold text-teal-700" data-target="7" data-suffix="+">7+</span>
+              <span class="text-sm font-bold text-slate-700">건</span>
+            </div>
+            <p class="mt-1 text-xs text-slate-500">기후·방재·지역개발 핵심과제</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. EDUCATION, CAREER, AWARDS & HONORS -->
+    <section id="career" class="scroll-mt-24 space-y-6">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-2">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-teal-700">Academic Background & Public Service</span>
+          <h2 class="text-2xl font-extrabold text-navy-950 mt-0.5">학력 · 주요 경력 · 수상 및 서훈</h2>
+        </div>
+        <p class="text-xs sm:text-sm text-slate-500">학술 연구, 학회 편집·임원 활동, 정부 정책자문 및 국가시험 출제 이력</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <!-- Left Column: Education & Awards (5 cols) -->
+        <div class="lg:col-span-5 space-y-6">
+          <!-- Education Card -->
+          <div class="card-elevated rounded-2xl p-6">
+            <div class="flex items-center gap-2.5 mb-4">
+              <div class="w-9 h-9 rounded-xl bg-navy-900 text-white flex items-center justify-center">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+              </div>
+              <h3 class="text-lg font-bold text-navy-900">학력 (Education)</h3>
+            </div>
+            <ul class="space-y-4">
+              <li class="relative pl-5 border-l-2 border-teal-600">
+                <span class="absolute -left-[7px] top-1.5 w-3 h-3 rounded-full bg-teal-600 ring-4 ring-teal-50"></span>
+                <p class="text-sm font-bold text-navy-900">도시계획학 박사 (Ph.D. in Urban Planning)</p>
+                <p class="text-xs sm:text-sm text-slate-600 mt-0.5">서울대학교 대학원 환경대학원</p>
+              </li>
+              <li class="relative pl-5 border-l-2 border-slate-200">
+                <span class="absolute -left-[7px] top-1.5 w-3 h-3 rounded-full bg-navy-400"></span>
+                <p class="text-sm font-bold text-navy-900">도시계획학 석사 · 학사</p>
+                <p class="text-xs sm:text-sm text-slate-600 mt-0.5">도시·지역계획 및 환경·재난 정책 전공 기반 구축</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Awards & Honors Card -->
+          <div class="card-elevated rounded-2xl p-6 bg-gradient-to-b from-white to-amber-50/30">
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center gap-2.5">
+                <div class="w-9 h-9 rounded-xl bg-amber-500 text-white flex items-center justify-center shadow-2xs">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+                </div>
+                <h3 class="text-lg font-bold text-navy-900">주요 수상 및 서훈</h3>
+              </div>
+              <span class="text-xs font-semibold text-amber-800 bg-amber-100 px-2.5 py-0.5 rounded-full">5건</span>
+            </div>
+
+            <div class="space-y-3">
+              <div class="p-3.5 rounded-xl bg-amber-50/90 border border-amber-200/80">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="text-xs font-extrabold text-amber-900 bg-amber-200/80 px-2 py-0.5 rounded">2026 선정</span>
+                  <span class="text-[11px] font-medium text-amber-800">대한민국학술원</span>
+                </div>
+                <p class="text-sm font-bold text-navy-950 mt-1.5">2026년 대한민국학술원 우수학술도서 선정</p>
+                <p class="text-xs text-slate-700 mt-0.5">『환경과 재난 그리고 불평등』 (윤성사, 사회과학 분야)</p>
+              </div>
+
+              <div class="p-3 rounded-xl bg-white border border-slate-200/80 flex items-start justify-between gap-3">
+                <div>
+                  <p class="text-sm font-bold text-navy-900">국토교통부장관 표창</p>
+                  <p class="text-xs text-slate-500 mt-0.5">국토·도시 정책 및 학술 발전 기여</p>
+                </div>
+                <span class="text-xs font-semibold text-navy-700 bg-navy-50 px-2 py-0.5 rounded shrink-0">2020. 09.</span>
+              </div>
+
+              <div class="p-3 rounded-xl bg-white border border-slate-200/80 flex items-start justify-between gap-3">
+                <div>
+                  <p class="text-sm font-bold text-navy-900">대통령 표창</p>
+                  <p class="text-xs text-slate-500 mt-0.5">국가 재난안전 및 정책 자문 공헌</p>
+                </div>
+                <span class="text-xs font-semibold text-navy-700 bg-navy-50 px-2 py-0.5 rounded shrink-0">2020. 05.</span>
+              </div>
+
+              <div class="p-3 rounded-xl bg-white border border-slate-200/80 flex items-start justify-between gap-3">
+                <div>
+                  <p class="text-sm font-bold text-navy-900">행정안전부장관 표창</p>
+                  <p class="text-xs text-slate-500 mt-0.5">재난관리 및 지방행정 발전 기여</p>
+                </div>
+                <span class="text-xs font-semibold text-navy-700 bg-navy-50 px-2 py-0.5 rounded shrink-0">2019. 12.</span>
+              </div>
+
+              <div class="p-3 rounded-xl bg-white border border-slate-200/80 flex items-start justify-between gap-3">
+                <div>
+                  <p class="text-sm font-bold text-navy-900">제28회 과학기술우수논문상</p>
+                  <p class="text-xs text-slate-500 mt-0.5">한국과학기술단체총연합회</p>
+                </div>
+                <span class="text-xs font-semibold text-teal-700 bg-teal-50 px-2 py-0.5 rounded shrink-0">2018. 08.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Professional & Public Career (7 cols) -->
+        <div class="lg:col-span-7 card-elevated rounded-2xl p-6">
+          <div class="flex items-center gap-2.5 mb-5">
+            <div class="w-9 h-9 rounded-xl bg-teal-700 text-white flex items-center justify-center">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </div>
+            <h3 class="text-lg font-bold text-navy-900">주요 직책 및 공공·학회·연구 경력</h3>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- Academic Appointment -->
+            <div class="p-4 rounded-xl bg-navy-50/60 border border-navy-100 md:col-span-2">
+              <div class="flex flex-wrap items-center justify-between gap-2">
+                <span class="text-xs font-bold text-navy-800 bg-white px-2.5 py-0.5 rounded-md border border-navy-100">현직 · 대학 보직</span>
+                <span class="text-xs font-semibold text-teal-700">2008 ~ 현재</span>
+              </div>
+              <h4 class="text-base font-bold text-navy-950 mt-2">강원대학교 사회과학대학 행정학과 교수</h4>
+              <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
+                조교수·부교수·정교수 재직 &nbsp;|&nbsp; 전(前) 사회과학대학 부학장(2015~2017), 전(前) 행정학과장(2011~2013)
+              </p>
+            </div>
+
+            <!-- Academic Societies & Editorial -->
+            <div class="p-4 rounded-xl bg-white border border-slate-200/90 space-y-2">
+              <span class="inline-block text-xs font-bold text-teal-800 bg-teal-50 px-2.5 py-0.5 rounded-md">학회 편집위원장 및 임원</span>
+              <ul class="text-xs sm:text-sm text-slate-700 space-y-1.5 leading-relaxed">
+                <li>• <strong>『지방행정연구』 편집위원장</strong> (2024~2027)</li>
+                <li>• <strong>대한국토·도시계획학회</strong> 지방정부정책자문단장 / 도시환경에너지연구위원회 활동</li>
+                <li>• <strong>주요 학회 임원·편집위원:</strong> 한국지역개발학회, 한국지적정보학회, 한국거버넌스학회, 한국지방정부학회, 한국지방자치학회, 한국환경정책학회 등</li>
+              </ul>
+            </div>
+
+            <!-- Government Evaluation & Advisory -->
+            <div class="p-4 rounded-xl bg-white border border-slate-200/90 space-y-2">
+              <span class="inline-block text-xs font-bold text-navy-800 bg-navy-50 px-2.5 py-0.5 rounded-md">정부·공공기관 평가 및 자문</span>
+              <ul class="text-xs sm:text-sm text-slate-700 space-y-1.5 leading-relaxed">
+                <li>• <strong>행정안전부:</strong> 재난대응안전한국훈련 중앙합동평가단, 재난안전사업평가단, 지방공기업경영평가단</li>
+                <li>• <strong>중앙부처·연구회:</strong> 국민권익위원회, 국방부, 국민안전처, 과학기술정보통신부, 국토교통부, 경제인문사회연구회 등 평가·자문위원</li>
+              </ul>
+            </div>
+
+            <!-- National Exam Committee -->
+            <div class="p-4 rounded-xl bg-white border border-slate-200/90 space-y-1.5">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold text-slate-700 bg-slate-100 px-2.5 py-0.5 rounded-md">국가고시 출제·선정위원</span>
+                <span class="text-xs text-slate-500">2010 ~ 2020</span>
+              </div>
+              <p class="text-xs sm:text-sm text-slate-700 leading-relaxed pt-1">
+                <strong>행정고시(5급 공채), 입법고시</strong> 등 주요 국가시험 출제 및 선정위원 역임
+              </p>
+            </div>
+
+            <!-- Domestic Research Institutes -->
+            <div class="p-4 rounded-xl bg-white border border-slate-200/90 space-y-1.5">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold text-slate-700 bg-slate-100 px-2.5 py-0.5 rounded-md">국책·지방 연구원 경력</span>
+                <span class="text-xs text-slate-500">2004 ~ 2007</span>
+              </div>
+              <ul class="text-xs sm:text-sm text-slate-700 space-y-1 pt-1">
+                <li>• <strong>충남연구원</strong> 지역정책연구부 책임연구원 (2005~2007)</li>
+                <li>• <strong>한국건설기술연구원(KICT)</strong> 수자원연구부 박사후연구원 (2004~2005)</li>
+              </ul>
+            </div>
+
+            <!-- International Research Experience -->
+            <div class="p-4 rounded-xl bg-teal-50/40 border border-teal-100 md:col-span-2">
+              <div class="flex flex-wrap items-center justify-between gap-2">
+                <span class="text-xs font-bold text-teal-800 bg-white px-2.5 py-0.5 rounded-md border border-teal-100">해외 연구 및 국제 자문 경력</span>
+                <span class="text-xs text-slate-500">2007 ~ 2015</span>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-2.5 text-xs sm:text-sm text-slate-700">
+                <div class="bg-white/80 p-3 rounded-lg border border-teal-100/80">
+                  <p class="font-bold text-navy-900">미국 캘리포니아 주립 폴리테크닉 대학교 (Cal Poly Pomona)</p>
+                  <p class="text-xs text-slate-600 mt-0.5">방문연구원 및 남가주정부연합(SCAG) 자문위원 (2013~2015)</p>
+                </div>
+                <div class="bg-white/80 p-3 rounded-lg border border-teal-100/80">
+                  <p class="font-bold text-navy-900">미국 사우스캐롤라이나대학교 (USC)</p>
+                  <p class="text-xs text-slate-600 mt-0.5">재난취약성연구소(HVRI) 연구원 및 겸임교수 (2007~2011)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. CORE RESEARCH & EXPERTISE AREAS (6 Cards) -->
+    <section id="research-areas" class="scroll-mt-24 space-y-6">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-2">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-teal-700">Research & Policy Domains</span>
+          <h2 class="text-2xl font-extrabold text-navy-950 mt-0.5">핵심 연구 · 전문 분야</h2>
+        </div>
+        <p class="text-xs sm:text-sm text-slate-500">이론적 정교함과 실증 데이터 방법론을 결합한 6대 중점 연구 영역</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- Area 1 -->
+        <div class="card-elevated rounded-2xl p-6 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="w-10 h-10 rounded-xl bg-navy-900 text-white flex items-center justify-center font-bold text-sm">01</span>
+              <span class="text-xs font-semibold text-teal-700 bg-teal-50 px-2.5 py-1 rounded-full">Disaster & Risk</span>
+            </div>
+            <h3 class="text-lg font-bold text-navy-950">재난관리 및 리스크 거버넌스</h3>
+            <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+              리스크 거버넌스 프레임워크(RGF), 공공·민간 업무연속성계획(COOP/BCP), 위험커뮤니케이션과 위험의 사회적 증폭, 인구감소 시대의 안전패러다임 전환 연구
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-1.5 mt-4 pt-3 border-t border-slate-100">
+            <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 text-[11px] font-medium">#리스크거버넌스</span>
+            <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 text-[11px] font-medium">#COOP·BCP</span>
+            <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 text-[11px] font-medium">#재난회복탄력성</span>
+          </div>
+        </div>
+
+        <!-- Area 2 -->
+        <div class="card-elevated rounded-2xl p-6 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="w-10 h-10 rounded-xl bg-teal-700 text-white flex items-center justify-center font-bold text-sm">02</span>
+              <span class="text-xs font-semibold text-navy-700 bg-navy-50 px-2.5 py-1 rounded-full">Climate Justice</span>
+            </div>
+            <h3 class="text-lg font-bold text-navy-950">기후변화 적응 및 기후정의·불평등</h3>
+            <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+              기후변화 영향의 지역적·사회경제적 불평등 규명, 기후정의(Climate Justice), 탄소시장 윤리, 지방자치단체 기후변화 적응정책 및 연안·수자원 취약성 평가
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-1.5 mt-4 pt-3 border-t border-slate-100">
+            <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 text-[11px] font-medium">#기후불평등</span>
+            <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 text-[11px] font-medium">#기후정의</span>
+            <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 text-[11px] font-medium">#기후적응정책</span>
+          </div>
+        </div>
+
+        <!-- Area 3 -->
+        <div class="card-elevated rounded-2xl p-6 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="w-10 h-10 rounded-xl bg-navy-800 text-white flex items-center justify-center font-bold text-sm">03</span>
+              <span class="text-xs font-semibold text-teal-700 bg-teal-50 px-2.5 py-1 rounded-full">Urban & Spatial</span>
+            </div>
+            <h3 class="text-lg font-bold text-navy-950">도시행정·스마트시티 및 공간구조</h3>
+            <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+              포스트 코로나 도시공간구조 재편과 방재적 도시재생, 4차 산업혁명 기반 스마트시티 진화, 도시화·토지이용 변화에 따른 수재해 취약성 및 공간계량분석
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-1.5 mt-4 pt-3 border-t border-slate-100">
+            <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 text-[11px] font-medium">#스마트시티</span>
+            <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 text-[11px] font-medium">#도시재생</span>
+            <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 text-[11px] font-medium">#공간분석·GIS</span>
+          </div>
+        </div>
+
+        <!-- Area 4 -->
+        <div class="card-elevated rounded-2xl p-6 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="w-10 h-10 rounded-xl bg-teal-600 text-white flex items-center justify-center font-bold text-sm">04</span>
+              <span class="text-xs font-semibold text-navy-700 bg-navy-50 px-2.5 py-1 rounded-full">Regional Policy</span>
+            </div>
+            <h3 class="text-lg font-bold text-navy-950">지방소멸 대응 및 국가균형발전</h3>
+            <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+              인구소멸 위기 지역의 생활인구 활성화 전략, 청년 이주와 지역 격차, 강원특별자치도 등 분권형 특구 전략, 접경·개발제한구역 규제 합리화 정책
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-1.5 mt-4 pt-3 border-t border-slate-100">
+            <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 text-[11px] font-medium">#지방소멸대응</span>
+            <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 text-[11px] font-medium">#생활인구</span>
+            <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 text-[11px] font-medium">#국가균형발전</span>
+          </div>
+        </div>
+
+        <!-- Area 5 -->
+        <div class="card-elevated rounded-2xl p-6 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="w-10 h-10 rounded-xl bg-navy-900 text-white flex items-center justify-center font-bold text-sm">05</span>
+              <span class="text-xs font-semibold text-teal-700 bg-teal-50 px-2.5 py-1 rounded-full">ESG & Governance</span>
+            </div>
+            <h3 class="text-lg font-bold text-navy-950">ESG 경영 및 지방공기업·성과평가</h3>
+            <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+              지방공기업 ESG-회복탄력성 프레임워크, 기업 ESG-COOP 통합 전략, 지방정부 지속가능발전목표(SDGs) 이행 성과측정, DEA 기반 공공서비스 효율성 평가
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-1.5 mt-4 pt-3 border-t border-slate-100">
+            <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 text-[11px] font-medium">#지방공기업ESG</span>
+            <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 text-[11px] font-medium">#SDGs성과측정</span>
+            <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 text-[11px] font-medium">#전과정평가(LCA)</span>
+          </div>
+        </div>
+
+        <!-- Area 6 -->
+        <div class="card-elevated rounded-2xl p-6 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="w-10 h-10 rounded-xl bg-teal-700 text-white flex items-center justify-center font-bold text-sm">06</span>
+              <span class="text-xs font-semibold text-navy-700 bg-navy-50 px-2.5 py-1 rounded-full">Data Science</span>
+            </div>
+            <h3 class="text-lg font-bold text-navy-950">데이터 기반 정책분석 방법론</h3>
+            <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+              대규모 텍스트 마이닝(TF-IDF·의미망·토픽모델링), 사회연결망분석(SNA), 지수분해분석(IDA), 포아송·패널 계량모형, AI 기반 지식관리 및 위기대응 의사결정
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-1.5 mt-4 pt-3 border-t border-slate-100">
+            <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 text-[11px] font-medium">#빅데이터·토픽모델링</span>
+            <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 text-[11px] font-medium">#연결망·지수분해</span>
+            <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 text-[11px] font-medium">#AI지식관리</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. BOOKS & MONOGRAPHS (18 Books Complete + Highlight) -->
+    <section id="books" class="scroll-mt-24 space-y-6">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-teal-700">Authored & Co-authored Books</span>
+          <h2 class="text-2xl font-extrabold text-navy-950 mt-0.5">주요 저서 · 역서 <span class="text-teal-700 font-bold text-xl">(총 18권)</span></h2>
+        </div>
+        <div class="flex items-center gap-2">
+          <button type="button" onclick="filterBooks('all')" data-book-filter="all" class="book-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-navy-900 text-white cursor-pointer">전체 (18)</button>
+          <button type="button" onclick="filterBooks('solo')" data-book-filter="solo" class="book-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 cursor-pointer">단독 저서 (5)</button>
+          <button type="button" onclick="filterBooks('co')" data-book-filter="co" class="book-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 cursor-pointer">공저·편저 (13)</button>
+        </div>
+      </div>
+
+      <!-- Featured Highlight Book Banner -->
+      <div class="rounded-2xl bg-gradient-to-r from-navy-950 via-navy-900 to-teal-900 text-white p-6 sm:p-7 shadow-md border border-navy-800 relative overflow-hidden">
+        <div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
+          <div class="space-y-2.5 max-w-3xl">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-extrabold bg-amber-400 text-navy-950 shadow-2xs">
+                ★ 2026년 대한민국학술원 우수학술도서 선정
+              </span>
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-white/15 text-teal-200">
+                단독 저서 · 윤성사 · 2025. 10. 31. 발행
+              </span>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-extrabold tracking-tight text-white">
+              『환경과 재난 그리고 불평등』
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-200 leading-relaxed">
+              기후위기와 복합재난이 사회계층과 지역에 불균등하게 작동하는 구조적 메커니즘을 환경정의와 리스크 거버넌스 관점에서 심층 해부한 대표 저작으로, 2026년 대한민국학술원 사회과학 분야 우수학술도서로 선정되었습니다.
+            </p>
+          </div>
+          <div class="shrink-0 flex md:flex-col items-center md:items-end justify-between gap-2 bg-white/10 backdrop-blur-xs rounded-xl p-4 border border-white/15">
+            <span class="text-xs text-teal-200 font-semibold">대표 단독 저술 라인업</span>
+            <div class="text-right text-xs text-slate-200 space-y-0.5">
+              <p>• 환경과 재난 그리고 불평등 (2025)</p>
+              <p>• 환경정책론: 위험사회의 환경과 재난 (2018)</p>
+              <p>• 기후변화 다이내믹스 (2013)</p>
+              <p>• 도시화와 자연재해 (2008)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 18 Books Grid -->
+      <div id="books-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
+    <!-- 5. ACADEMIC PAPERS (122 Complete Papers + Interactive Explorer + Year Chart) -->
+    <section id="papers" class="scroll-mt-24 space-y-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-3">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-teal-700">Peer-Reviewed Journal Articles</span>
+          <h2 class="text-2xl font-extrabold text-navy-950 mt-0.5">학술논문 전체 아카이브 <span class="text-teal-700 font-bold text-xl">(총 122편)</span></h2>
+        </div>
+        <p class="text-xs sm:text-sm text-slate-500">2003년~2026년 11월 12일 현재 국내외 등재·국제 학술지 게재 논문 전수 수록</p>
+      </div>
+
+      <!-- Annual Publication Trend Bar Chart (2003~2026) -->
+      <div class="card-elevated rounded-2xl p-5 sm:p-6">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
+          <div>
+            <h3 class="text-sm sm:text-base font-bold text-navy-900">연도별 학술논문 게재 추이 (2003 ~ 2026)</h3>
+            <p class="text-xs text-slate-500">막대를 클릭하면 해당 연도의 논문만 즉시 필터링하여 볼 수 있습니다.</p>
+          </div>
+          <div class="flex items-center gap-3 text-xs">
+            <span class="inline-flex items-center gap-1.5 text-slate-600"><span class="w-2.5 h-2.5 rounded-xs bg-navy-800"></span>일반 연도</span>
+            <span class="inline-flex items-center gap-1.5 text-slate-600"><span class="w-2.5 h-2.5 rounded-xs bg-teal-600"></span>선택/최근 연도</span>
+          </div>
+        </div>
+        <div id="year-chart-container" class="w-full overflow-x-auto pb-2">
+          <!-- SVG / CSS Bar chart generated dynamically from the 122 papers -->
+        </div>
+      </div>
+
+      <!-- Interactive Filter & Search Controls -->
+      <div class="card-elevated rounded-2xl p-5 space-y-4">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-3.5 items-center">
+          <!-- Search Input -->
+          <div class="lg:col-span-5 relative">
+            <svg class="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+            <input id="paper-search-input" type="text" placeholder="논문 제목, 학술지명, 공저자, 키워드 검색 (예: ESG, 기후, 빅데이터, 재난)..." class="w-full pl-10 pr-9 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-teal-600 focus:ring-2 focus:ring-teal-500/20 bg-slate-50/60" />
+            <button id="paper-search-clear" type="button" onclick="clearPaperSearch()" class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 text-xs font-bold cursor-pointer">✕</button>
+          </div>
+
+          <!-- Period Filter Buttons -->
+          <div class="lg:col-span-5 flex flex-wrap items-center gap-1.5">
+            <button type="button" data-period="all" onclick="setPaperPeriod('all')" class="period-btn active px-2.5 py-1.5 rounded-lg text-xs font-semibold bg-navy-900 text-white cursor-pointer">전체</button>
+            <button type="button" data-period="2025-2026" onclick="setPaperPeriod('2025-2026')" class="period-btn px-2.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 cursor-pointer">2025~2026</button>
+            <button type="button" data-period="2021-2024" onclick="setPaperPeriod('2021-2024')" class="period-btn px-2.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 cursor-pointer">2021~2024</button>
+            <button type="button" data-period="2016-2020" onclick="setPaperPeriod('2016-2020')" class="period-btn px-2.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 cursor-pointer">2016~2020</button>
+            <button type="button" data-period="2011-2015" onclick="setPaperPeriod('2011-2015')" class="period-btn px-2.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 cursor-pointer">2011~2015</button>
+            <button type="button" data-period="2003-2010" onclick="setPaperPeriod('2003-2010')" class="period-btn px-2.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 cursor-pointer">2003~2010</button>
+          </div>
+
+          <!-- Author Type Filter -->
+          <div class="lg:col-span-2 flex items-center justify-start lg:justify-end gap-1.5">
+            <select id="paper-author-select" onchange="applyPaperFilters()" aria-label="저자 구분 필터" class="w-full lg:w-auto px-3 py-2.5 rounded-xl border border-slate-200 text-xs font-semibold text-navy-900 bg-white focus:outline-none focus:border-teal-600 cursor-pointer">
+              <option value="all">저자: 전체</option>
+              <option value="solo">단독 연구만</option>
+              <option value="co">공동 연구만</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Quick Topic Tag Chips + Result Counter -->
+        <div class="flex flex-wrap items-center justify-between gap-3 pt-2 border-t border-slate-100">
+          <div class="flex flex-wrap items-center gap-1.5">
+            <span class="text-xs font-semibold text-slate-400 mr-1">빠른 주제:</span>
+            <button type="button" onclick="quickSearchPaper('ESG')" class="px-2.5 py-1 rounded-full text-xs bg-teal-50 text-teal-800 hover:bg-teal-100 font-medium cursor-pointer">#ESG·지속가능</button>
+            <button type="button" onclick="quickSearchPaper('기후')" class="px-2.5 py-1 rounded-full text-xs bg-navy-50 text-navy-800 hover:bg-navy-100 font-medium cursor-pointer">#기후변화·정의</button>
+            <button type="button" onclick="quickSearchPaper('재난')" class="px-2.5 py-1 rounded-full text-xs bg-teal-50 text-teal-800 hover:bg-teal-100 font-medium cursor-pointer">#재난·방재</button>
+            <button type="button" onclick="quickSearchPaper('빅데이터')" class="px-2.5 py-1 rounded-full text-xs bg-navy-50 text-navy-800 hover:bg-navy-100 font-medium cursor-pointer">#빅데이터·AI</button>
+            <button type="button" onclick="quickSearchPaper('COOP')" class="px-2.5 py-1 rounded-full text-xs bg-teal-50 text-teal-800 hover:bg-teal-100 font-medium cursor-pointer">#COOP·BCP</button>
+            <button type="button" onclick="quickSearchPaper('도시')" class="px-2.5 py-1 rounded-full text-xs bg-navy-50 text-navy-800 hover:bg-navy-100 font-medium cursor-pointer">#도시·지역개발</button>
+            <button type="button" onclick="resetAllPaperFilters()" class="px-2.5 py-1 rounded-full text-xs bg-slate-100 text-slate-600 hover:bg-slate-200 font-medium cursor-pointer">초기화</button>
+          </div>
+
+          <div class="text-xs sm:text-sm font-semibold text-navy-900">
+            검색 결과: <span id="paper-filtered-count" class="text-teal-700 font-extrabold">122</span>편 <span class="text-slate-400 font-normal">/ 전체 122편</span>
+          </div>
+        </div>
+
+        <!-- Papers List Container -->
+        <div id="papers-list" class="divide-y divide-slate-100">
+          <!-- Rendered by JS -->
+        </div>
+
+        <!-- Show More / Show All Controls -->
+        <div id="papers-pagination-bar" class="pt-4 border-t border-slate-100 flex flex-wrap items-center justify-center gap-3">
+          <button id="btn-load-more-papers" type="button" onclick="loadMorePapers()" class="px-5 py-2.5 rounded-xl bg-navy-900 hover:bg-navy-800 text-white text-xs sm:text-sm font-semibold transition cursor-pointer shadow-2xs">
+            논문 20편 더 보기
+          </button>
+          <button id="btn-show-all-papers" type="button" onclick="toggleShowAllPapers()" class="px-5 py-2.5 rounded-xl bg-white hover:bg-slate-50 text-navy-900 border border-slate-300 text-xs sm:text-sm font-semibold transition cursor-pointer">
+            122편 전체 펼쳐보기
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CONFERENCES / FORUMS (142) & RESEARCH REPORTS (7) -->
+    <section id="conferences" class="scroll-mt-24 space-y-10">
+      <!-- Research Reports Subsection (7 Reports) -->
+      <div id="reports-section" class="space-y-5 scroll-mt-24">
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-2">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-teal-700">Policy & Research Reports</span>
+            <h2 class="text-2xl font-extrabold text-navy-950 mt-0.5">주요 정책 · 연구보고서 <span class="text-teal-700 font-bold text-xl">(7건)</span></h2>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-500">기후변화 적응, 가뭄·재난 방재, 지역위험도 분석 및 의연금 배분 시스템 개발</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="reports-grid">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+
+      <!-- Academic Conferences & Policy Forums (142 Presentations) -->
+      <div class="space-y-5">
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-2">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-teal-700">Conferences, Symposia & Policy Forums</span>
+            <h2 class="text-2xl font-extrabold text-navy-950 mt-0.5">학술대회 · 정책포럼 발표 <span class="text-teal-700 font-bold text-xl">(총 142회)</span></h2>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-500">2008년~2026년 국내외 학술대회 주제발표, 특별세미나, 국회·지자체 정책토론회</p>
+        </div>
+
+        <!-- Recent Key Presentations Highlight Cards (2024~2026) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="card-elevated rounded-2xl p-5 border-l-4 border-l-teal-600">
+            <div class="flex items-center justify-between text-xs mb-2">
+              <span class="font-bold text-teal-700 bg-teal-50 px-2 py-0.5 rounded">2026. 05. 22.</span>
+              <span class="text-slate-500 font-medium">한국지역개발학회</span>
+            </div>
+            <h3 class="text-sm sm:text-base font-bold text-navy-950">“데이터 공백과 통치의 공간성”</h3>
+            <p class="text-xs text-slate-600 mt-1.5">한국지역개발학회 2026년 춘계연합학술대회 (단독 발표)</p>
+          </div>
+
+          <div class="card-elevated rounded-2xl p-5 border-l-4 border-l-navy-800">
+            <div class="flex items-center justify-between text-xs mb-2">
+              <span class="font-bold text-navy-800 bg-navy-50 px-2 py-0.5 rounded">2025. 11. 29.</span>
+              <span class="text-slate-500 font-medium">대한국토·도시계획학회</span>
+            </div>
+            <h3 class="text-sm sm:text-base font-bold text-navy-950">“생활인구 활성화 전략과 사례”</h3>
+            <p class="text-xs text-slate-600 mt-1.5">5극3특시대 강원특별자치도의 지방소멸대응전략 세미나 (단독)</p>
+          </div>
+
+          <div class="card-elevated rounded-2xl p-5 border-l-4 border-l-teal-600">
+            <div class="flex items-center justify-between text-xs mb-2">
+              <span class="font-bold text-teal-700 bg-teal-50 px-2 py-0.5 rounded">2025. 11. 26.</span>
+              <span class="text-slate-500 font-medium">한국기후변화연구원</span>
+            </div>
+            <h3 class="text-sm sm:text-base font-bold text-navy-950">“물과 국가의 거버넌스”</h3>
+            <p class="text-xs text-slate-600 mt-1.5">2025 기후변화 재난방재 토론회 (단독 주제발표)</p>
+          </div>
+
+          <div class="card-elevated rounded-2xl p-5 border-l-4 border-l-navy-800">
+            <div class="flex items-center justify-between text-xs mb-2">
+              <span class="font-bold text-navy-800 bg-navy-50 px-2 py-0.5 rounded">2024. 12. 13.</span>
+              <span class="text-slate-500 font-medium">대한국토·도시계획학회</span>
+            </div>
+            <h3 class="text-sm sm:text-base font-bold text-navy-950">“인구소멸과 강원특별자치도의 발전방안”</h3>
+            <p class="text-xs text-slate-600 mt-1.5">강원지회 추계학술세미나 (단독 주제발표)</p>
+          </div>
+
+          <div class="card-elevated rounded-2xl p-5 border-l-4 border-l-teal-600">
+            <div class="flex items-center justify-between text-xs mb-2">
+              <span class="font-bold text-teal-700 bg-teal-50 px-2 py-0.5 rounded">2024. 10. 23.</span>
+              <span class="text-slate-500 font-medium">강원특별자치도</span>
+            </div>
+            <h3 class="text-sm sm:text-base font-bold text-navy-950">“한국 근대사의 재난재해”</h3>
+            <p class="text-xs text-slate-600 mt-1.5">기후변화 재난방재토론회 (단독 발표)</p>
+          </div>
+
+          <div class="card-elevated rounded-2xl p-5 border-l-4 border-l-navy-800">
+            <div class="flex items-center justify-between text-xs mb-2">
+              <span class="font-bold text-navy-800 bg-navy-50 px-2 py-0.5 rounded">2024. 09. 05.</span>
+              <span class="text-slate-500 font-medium">대한국토·도시계획학회</span>
+            </div>
+            <h3 class="text-sm sm:text-base font-bold text-navy-950">“전남특별자치도 출범을 위한 강원특별자치도 사례의 시사점”</h3>
+            <p class="text-xs text-slate-600 mt-1.5">전남지방소멸위기 극복포럼 (단독 발표)</p>
+          </div>
+        </div>
+
+        <!-- Searchable Full 142 Conferences Timeline/List -->
+        <div class="card-elevated rounded-2xl p-5 sm:p-6 space-y-4">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div class="relative flex-1 max-w-md">
+              <svg class="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+              <input id="conf-search-input" type="text" placeholder="학술대회·포럼 발표 제목, 주최 학회·기관, 연도 검색..." class="w-full pl-10 pr-4 py-2 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-teal-600 bg-slate-50/70" />
+            </div>
+            <div class="flex flex-wrap items-center gap-2">
+              <select id="conf-year-select" onchange="applyConferenceFilters()" aria-label="학술대회 연도 선택" class="px-3 py-2 rounded-xl border border-slate-200 text-xs font-semibold text-navy-900 bg-white focus:outline-none focus:border-teal-600 cursor-pointer">
+                <option value="all">전체 연도 (2008~2026)</option>
+                <option value="2024-2026">2024 ~ 2026 (26회)</option>
+                <option value="2020-2023">2020 ~ 2023 (21회)</option>
+                <option value="2016-2019">2016 ~ 2019 (39회)</option>
+                <option value="2011-2015">2011 ~ 2015 (27회)</option>
+                <option value="2008-2010">2008 ~ 2010 (29회)</option>
+              </select>
+              <span class="text-xs sm:text-sm font-semibold text-navy-900">
+                표시: <span id="conf-filtered-count" class="text-teal-700 font-extrabold">142</span>회
+              </span>
+            </div>
+          </div>
+
+          <div id="conferences-list" class="divide-y divide-slate-100 max-h-[540px] overflow-y-auto pr-1">
+            <!-- Rendered by JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-navy-950 text-slate-300 border-t border-navy-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+      <div>
+        <p class="text-base font-bold text-white">최충익 교수 &nbsp;|&nbsp; 강원대학교 사회과학대학 행정학과</p>
+        <p class="text-xs text-slate-400 mt-1">
+          본 학술·정책 포트폴리오 대시보드는 2026년 11월 12일 기준 공식 생애업적 자료를 바탕으로 구성되었습니다.
+        </p>
+      </div>
+      <div class="flex items-center gap-3 text-xs">
+        <a href="#top" class="px-3.5 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-white font-medium transition">
+          맨 위로 이동 ↑
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Box (No alert() used) -->
+  <div id="toast-box" class="fixed bottom-6 right-6 z-50 hidden transform transition-all duration-300">
+    <div class="bg-navy-900 text-white px-4 py-3 rounded-xl shadow-lg border border-navy-700 flex items-center gap-2.5 text-xs sm:text-sm font-medium">
+      <span class="w-2 h-2 rounded-full bg-teal-400"></span>
+      <span id="toast-message">알림 메시지</span>
+    </div>
+  </div>
+
+  <script>
+    // =========================================================================
+    // 1. COMPLETE DATA REPOSITORY (18 Books, 122 Papers, 142 Conferences, 7 Reports)
+    // =========================================================================
+
+    const BOOKS_DATA = [
+      { no: 1, authors: '최충익 외 16명', type: 'co', title: '대도시와 재난안전', publisher: '서울연구원', date: '2026-09-30', category: '[국내] 대학 교재', badge: '' },
+      { no: 2, authors: '최충익 (단독)', type: 'solo', title: '환경과 재난 그리고 불평등', publisher: '윤성사', date: '2025-10-31', category: '[국내] 대학 교재', badge: '2026 대한민국학술원 우수학술도서' },
+      { no: 3, authors: '최충익 외 14명', type: 'co', title: '도시행정의 이론과 실제', publisher: '대영문화사', date: '2022-03-10', category: '[국내] 대학 교재', badge: '' },
+      { no: 4, authors: '최충익 외 2명', type: 'co', title: '도시행정', publisher: '윤성사', date: '2022-01-21', category: '[국내] 전공', badge: '' },
+      { no: 5, authors: '최충익 외 3명', type: 'co', title: '경기도 공공주도 민간투자도로사업을 위한 복합개발 추진방안', publisher: '경기연구원', date: '2021-12-31', category: '[국내] 전공', badge: '' },
+      { no: 6, authors: '최충익 외 4명', type: 'co', title: 'Technological Advances, Smart City Policies, and Environmental Management', publisher: 'Eliva', date: '2020-06-30', category: '[국제] 대학 교재', badge: '국제 출판' },
+      { no: 7, authors: '최충익 외 8명', type: 'co', title: '지방분권 시대의 환경정책 : 성과관리의 권한과 책임', publisher: '문우사', date: '2020-03-31', category: '[국내] 전공', badge: '' },
+      { no: 8, authors: '최충익 (단독)', type: 'solo', title: '환경정책론 : 위험사회의 환경과 재난', publisher: '박영사', date: '2018-02-20', category: '[국내] 대학 교재', badge: '대표 단독 교재' },
+      { no: 9, authors: '최충익 외 12명', type: 'co', title: '지역 개발론', publisher: '박영사', date: '2017-12-01', category: '[국내] 전공', badge: '' },
+      { no: 10, authors: '최충익 외 8명', type: 'co', title: '환경행정학', publisher: '대영문화사', date: '2014-09-10', category: '[국내] 전공', badge: '' },
+      { no: 11, authors: '최충익 (단독)', type: 'solo', title: '기후변화 다이내믹스', publisher: '대영문화사', date: '2013-08-31', category: '[국내] 전공', badge: '대표 단독 저서' },
+      { no: 12, authors: '최충익 외 14명', type: 'co', title: '서울재해사', publisher: '서울특별시 시사편찬위원회', date: '2013-03-01', category: '[국내] 전문 학술', badge: '' },
+      { no: 13, authors: '백민호, 최충익 외 13명', type: 'co', title: '서울災害史', publisher: '서울특별시', date: '2013-02-25', category: '[국내] 기타', badge: '' },
+      { no: 14, authors: '소만섭, 김경수, 김정원, 김주현, 박인옥, 이선향, 이용희, 정기문, 조영신, 최충익', type: 'co', title: '2011학년도 수업방법개선연구과제 연구보고서집', publisher: '강원대학교 교수학습개발원', date: '2012-02-23', category: '[국내] 전문 학술', badge: '' },
+      { no: 15, authors: '최충익 외 2명', type: 'co', title: '기후변화에 대한 지방자치단체의 적응방안 연구', publisher: '경기개발연구원', date: '2008-11-01', category: '[국내] 전공', badge: '' },
+      { no: 16, authors: '최충익 (단독)', type: 'solo', title: '도시화와 자연재해', publisher: '부연사', date: '2008-04-17', category: '[국내] 전공', badge: '대표 단독 저서' },
+      { no: 17, authors: '최충익 (단독)', type: 'solo', title: '사막의 아나키스트 애드워드 애비', publisher: '달팽이출판', date: '2006-09-11', category: '[국내] 일반 교양', badge: '' },
+      { no: 18, authors: '최충익 외 13명', type: 'co', title: '성장관리의 이론과 실제 - 최상철교수 정년퇴임 기념서', publisher: '동서문화사', date: '2006-03-08', category: '[국내] 전공', badge: '' }
+    ];
+
+    const REPORTS_DATA = [
+      { no: 1, title: '기후변화에 대한 지방자치단체의 적응방안 연구', org: '지방자치단체·연구기관 정책과제', period: '기후적응 정책연구', desc: '지방자치단체 차원의 기후변화 취약성 평가 및 부문별 적응대책 수립 모델 구축' },
+      { no: 2, title: '발원지 고장 태백시 가뭄백서', org: '태백시', period: '재난·수자원 백서', desc: '한강·낙동강 발원지 태백시의 극한 가뭄 발생 현황, 대응 과정 및 물관리 정책 기록' },
+      { no: 3, title: '기후변화와 도시대응의 시공간적 역동성', org: '학술·정책 연구과제', period: '2012. 05. 01 ~ 2013. 04. 30', desc: '기후변화 충격에 대한 도시 공간구조와 행정 대응의 시공간적 변화 패턴 분석' },
+      { no: 4, title: '개발사업 정비 및 신규사업 발굴용역', org: '태백시', period: '지역개발 정책용역', desc: '지역 여건 변화에 부합하는 기존 개발사업 구조조정 및 미래 전략 신규사업 발굴' },
+      { no: 5, title: '포아송 분포를 활용한 지역위험도 분석과 함의', org: '학술·정책 연구과제', period: '2013. 06. 01 ~ 2014. 05. 31', desc: '재해 발생 빈도의 확률분포(포아송 모형)를 적용한 지역별 정량적 위험도 산출' },
+      { no: 6, title: '아산지역개발계획', org: '기타 국내 (아산시·지역개발)', period: '중장기 지역개발계획', desc: '아산시 도시·산업 성장에 대응한 중장기 공간발전 및 지역개발 종합계획 수립' },
+      { no: 7, title: '의연금 배분 프로그램 개발', org: '재난구호·방재 연구과제', period: '2010. 02. 26 ~ 2010. 11. 30', desc: '자연재해 이재민 지원을 위한 형평성·합리성 기반 재해의연금 배분 모델 및 프로그램 개발' }
+    ];
+
+    // All 122 Journal Papers from 2026년 11월 생애업적.pdf (1 to 122)
+    const PAPERS_DATA = [
+      { no: 1, authors: '최충익', solo: true, title: 'Developing an ESG-Resilience Framework for Local Public Enterprises', journal: '한국지방공기업학회보', publisher: '한국지방공기업학회', date: '2026-12', detail: '' },
+      { no: 2, authors: '최충익', solo: true, title: '농촌지역 자원순환체계 구축의 토지환경 정책적 함의', journal: '부동산정책연구', publisher: '한국부동산정책학회', date: '2026-12', detail: '' },
+      { no: 3, authors: '최충익', solo: true, title: 'Youth Migration and Changing Job Preferences in South Korea: Regional Divergence and Policy Implications', journal: '지역연구', publisher: '한국지역학회', date: '2026-12', detail: '' },
+      { no: 4, authors: '최충익', solo: true, title: 'The Standardization Paradox in Continuity Planning: Assessing Public-Sector COOP in Korea', journal: 'Crisisonomy', publisher: '위기관리 이론과 실천', date: '2026-11', detail: '' },
+      { no: 5, authors: '최충익', solo: true, title: 'Building Resilient Firms through ESG-COOP Integration', journal: 'East Asian Journal of Business Economics', publisher: '동아시아경상학회', date: '2026-09', detail: '' },
+      { no: 6, authors: '최충익', solo: true, title: '지방정부 지속가능발전목표 이행평가의 성과 측정에 관한 연구', journal: '한국공공관리학보', publisher: '한국공공관리학회', date: '2026-09', detail: '' },
+      { no: 7, authors: '최충익', solo: true, title: 'A Safety Paradigm Shift in the Era of Regional Depopulation', journal: '한국지역개발학회지', publisher: '한국지역개발학회', date: '2026-09', detail: '' },
+      { no: 8, authors: '최충익', solo: true, title: 'Channel Inequality in Global Vaccine Distribution', journal: 'Journal of Distribution Science', publisher: 'Korea Distribution Science Association (KODISA)', date: '2026-08', detail: '' },
+      { no: 9, authors: '최충익', solo: true, title: 'Socio-Economic Inequality and Differences in Life Expectancy', journal: 'Economics: the strategy and practice', publisher: 'Institute of Economics under the Science Committee of Ministry of Education and Science RK', date: '2026-07', detail: '' },
+      { no: 10, authors: '최충익', solo: true, title: '아동복지정책의 제도화와 다중흐름모형: 도시행정과 지역거버넌스의 역할을 중심으로', journal: '부동산정책연구', publisher: '한국부동산정책학회', date: '2025-12', detail: '제26권, 제3호, 112~129' },
+      { no: 11, authors: '최충익 외 1명', solo: false, title: '대여형 다회용컵 순환체계 환경영향 시나리오의 탐색적 해석: 공간 특성을 고려한 관공서 적용 사례를 중심으로', journal: '한국지적정보학회지', publisher: '한국지적정보학회', date: '2025-12', detail: '제27권, 제3호, 107~126' },
+      { no: 12, authors: '최충익 외 1명', solo: false, title: "다회용컵의 '그린워싱' 논쟁을 넘어서: 실제 운용데이터 기반 LCA", journal: '한국지역개발학회지', publisher: '한국지역개발학회', date: '2025-11', detail: '제37권, 제4호, 107~126' },
+      { no: 13, authors: '최충익', solo: true, title: 'Distribution Dynamics in the Post-COVID City: Implications for Spatial Structure and Urban Regeneration', journal: 'Journal of Distribution Science', publisher: 'KODISA Foundation', date: '2025-11', detail: '제23권, 제11호, 113~125' },
+      { no: 14, authors: '최충익', solo: true, title: 'Unequal Distribution of Climate Change Impacts across Regions: Towards Climate Justice', journal: 'Journal of Distribution Science', publisher: 'KODISA Foundation', date: '2025-04', detail: '제23권, 제4호, 103~116' },
+      { no: 15, authors: '최충익', solo: true, title: 'Trading Carbon, Trading Justice: Ethical Dimensions of Market-Based Climate Solutions', journal: 'East Asian Journal of Business Economics', publisher: '동아시아경상학회', date: '2025-03', detail: '제13권, 제1호, 1~16' },
+      { no: 16, authors: '최충익, 이광훈', solo: false, title: 'AI-Based Knowledge Management and Business Continuity Planning: Strategies for Crisis Management and Organizational Resilience', journal: '지식경영연구', publisher: '한국지식경영학회', date: '2024-12', detail: '제25권, 제4호, 153~181' },
+      { no: 17, authors: '최충익', solo: true, title: 'Building Back Better: Distribution Dynamics in Post-Pandemic Urban Resilience', journal: 'Journal of Distribution Science', publisher: 'Korea Distribution Science Association (KODISA)', date: '2024-04', detail: '제22권, 제4호, 69~77' },
+      { no: 18, authors: '최충익', solo: true, title: "Harnessing Technology for Disaster-Ready Cities: Technology's Role in Urban Resilience", journal: '부동산정책연구', publisher: '한국부동산정책학회', date: '2024-04', detail: '제25권, 제1호, 106~123' },
+      { no: 19, authors: '최충익', solo: true, title: 'Adapting to the Unpredictable: Companies Strategies with Business Continuity in the Pandemic Era', journal: 'East Asian Journal of Business Economics', publisher: '동아시아경상학회', date: '2024-03', detail: '제12권, 제1호, 23~33' },
+      { no: 20, authors: '최충익', solo: true, title: '포스트 코로나 시대 부동산시장의 전망과 과제', journal: '부동산정책연구', publisher: '한국부동산정책학회', date: '2023-12', detail: '제24권, 제3호, 89~100' },
+      { no: 21, authors: '최충익, 이광훈', solo: false, title: 'ESG-Based Corporate Governance and Knowledge Management: Implications for Public Enterprises', journal: '지식경영연구', publisher: '한국지식경영학회', date: '2023-09', detail: '제24권, 제3호, 53~71' },
+      { no: 22, authors: '최충익, 이광훈', solo: false, title: 'The Great Divide: How the Pandemic Widened Socioeconomic Inequalities', journal: 'East Asian Journal of Business Economics', publisher: '동아시아경상학회', date: '2023-06', detail: '제11권, 제2호, 71~80' },
+      { no: 23, authors: '최충익, 이광훈', solo: false, title: 'Varieties of Regional Innovation Systems in Countries with High Local Autonomy: Case Studies of Switzerland, the United States, and Germany', journal: '한국지역개발학회지', publisher: '한국지역개발학회', date: '2023-06', detail: '제35권, 제2호, 169~196' },
+      { no: 24, authors: '최충익', solo: true, title: 'Risk and Responsibility: Understanding the Distribution of Serious Accident Punishment Act', journal: 'Journal of Distribution Science', publisher: 'Korea Distribution Science Association (KODISA)', date: '2023-06', detail: '제21권, 제6호, 31~38' },
+      { no: 25, authors: '최충익 외 1명', solo: false, title: '기후변화와 자연재해 이슈에 대한 빅데이터 분석과 함의', journal: '부동산정책연구', publisher: '한국부동산정책학회', date: '2023-04', detail: '제24권, 제1호, 65~82' },
+      { no: 26, authors: '최충익, 이광훈', solo: false, title: 'The Distribution of Work-Life Integration against COVID-19 and its Implications: Focusing on Remote Work in Switzerland', journal: 'Journal of Distribution Science', publisher: 'Korea Distribution Science Association (KODISA)', date: '2023-01', detail: '제21권, 제1호, 95~105' },
+      { no: 27, authors: '최충익 외 1명', solo: false, title: '국가균형발전정책의 정권별 비교 분석: TF-IDF 분석을 중심으로', journal: '사회과학연구', publisher: '사회과학연구원', date: '2022-12', detail: '제61권, 제3호, 487~509' },
+      { no: 28, authors: '최충익 외 1명', solo: false, title: '국가균형발전정책에 대한 빅데이터 분석과 함의: 의미망 분석과 토픽모델링 분석을 중심으로', journal: '한국지역개발학회지', publisher: '한국지역개발학회', date: '2022-12', detail: '제34권, 제5호, 1~18' },
+      { no: 29, authors: '최충익 외 1명', solo: false, title: '다중흐름모형을 이용한 국가균형발전의 정책변동 분석', journal: '부동산정책연구', publisher: '한국부동산정책학회', date: '2022-09', detail: '제23권, 제2호, 67~81' },
+      { no: 30, authors: '최충익', solo: true, title: 'The Distribution of Technological Innovation & Environmental Policy against COVID-19: Perspectives and Challenges', journal: 'Journal of Distribution Science', publisher: 'Korea Distribution Science Association (KODISA)', date: '2022-08', detail: '제20권, 제8호, 115~121' },
+      { no: 31, authors: '최충익 외 1명', solo: false, title: 'The Distribution of Mismatches in Government Policy Response against COVID-19 in Terms of Risk Communication and its Implications', journal: 'Journal of Distribution Science', publisher: 'Korea Distribution Science Association (KODISA)', date: '2021-12', detail: '제19권, 제12호, 91~101' },
+      { no: 32, authors: '최충익', solo: true, title: 'Discourse Analysis of Environmental Regulations and Technological Innovation for Corporate Competitiveness', journal: 'East Asian Journal of Business Economics', publisher: '동아시아경상학회', date: '2021-12', detail: '제9권, 제4호, 17~28' },
+      { no: 33, authors: '최충익', solo: true, title: 'ACF 모형을 활용한 SRF 열병합발전소 건립 정책과정분석과 함의', journal: '한국지적정보학회지', publisher: '한국지적정보학회', date: '2021-08', detail: '제23권, 제2호, 99~111' },
+      { no: 34, authors: '최충익 외 1명', solo: false, title: 'An Analysis of the Effects of Development-Restricted Areas on Land Price Using Spatial Analysis', journal: 'LAND', publisher: 'MDPI', date: '2021-06', detail: '제10권, 제6호' },
+      { no: 35, authors: '최충익, 전재범', solo: false, title: '최소운영수입보장 조항을 지닌 BTO PF 민자도로 사업의 채무불이행 위험 완화효과', journal: '한국지방자치학회보', publisher: '한국지방자치학회', date: '2021-06', detail: '제33권, 제2호, 1~22' },
+      { no: 36, authors: '최충익', solo: true, title: 'Issues in Real Estate Taxation and Rationalization of Property Taxation: Lessons from Real Estate Regulation Policy in Korea', journal: 'East Asian Journal of Business Economics', publisher: '동아시아경상학회', date: '2021-03', detail: '제9권, 제1호, 63~69' },
+      { no: 37, authors: '최충익 외 1명', solo: false, title: 'Posttraumatic Growth in the Distribution of Negative Interpersonal Relationship: A Christian Perspective', journal: 'Journal of Distribution Science', publisher: 'Korea Distribution Science Association (KODISA)', date: '2021-02', detail: '제19권, 제2호, 25~36' },
+      { no: 38, authors: '최충익, 이광훈 외 1명', solo: false, title: 'Relational Benefits, Alternative Attractiveness and Customer Loyalty: Implication for Service Distribution Channels', journal: 'Journal of Distribution Science', publisher: 'Korea Distribution Science Association (KODISA)', date: '2021-01', detail: '제19권, 제1호, 5~15' },
+      { no: 39, authors: '최충익, 이광훈', solo: false, title: '강원도 지역축제: 현황 및 성과(2012-2017)', journal: '사회과학연구', publisher: '강원대학교 사회과학연구원', date: '2020-12', detail: '제59권, 제2호, 25~69' },
+      { no: 40, authors: '최충익 외 2명', solo: false, title: '지역사회 기반 재난관리시스템을 위한 전통향약의 활용과 시사점', journal: '한국지적정보학회지', publisher: '한국지적정보학회', date: '2020-12', detail: '제22권, 제3호, 147~155' },
+      { no: 41, authors: '최충익 외 3명', solo: false, title: '부동산 보유세의 역진성과 전세가 귀착효과', journal: '감정평가학논집', publisher: '한국감정평가학회', date: '2020-12', detail: '제19권, 제3호, 29~47' },
+      { no: 42, authors: '최충익', solo: true, title: 'Environmental Cooperation with the Distribution of Urbanization between South and North Korea', journal: 'East Asian Journal of Business Economics', publisher: '동아시아경상학회', date: '2020-12', detail: '제8권, 제4호, 19~28' },
+      { no: 43, authors: '최충익, 전재범', solo: false, title: 'The Distribution of New Town Development against COVID-19 in South Korea: Lessons and Prospects', journal: 'Journal of Distribution Science', publisher: 'Korea Distribution Science Association (KODISA)', date: '2020-11', detail: '제18권, 제11호, 41~45' },
+      { no: 44, authors: '최충익 외 2명', solo: false, title: 'Disaster cooperation strategies between North and South Korea based on Sendai framework', journal: 'The Journal of Asian Finance, Economics and Business', publisher: '한국유통과학회', date: '2020-07', detail: '제7권, 제6호, 509~515' },
+      { no: 45, authors: '최충익 외 3명', solo: false, title: 'The smart city evolution in South Korea: Findings from big data analytics', journal: 'The Journal of Asian Finance, Economics and Business', publisher: 'Korea Distribution Science Association (KODISA)', date: '2020-01', detail: '제7권, 제1호, 301~311' },
+      { no: 46, authors: '최충익 외 1명', solo: false, title: '빅데이터를 활용한 물문화 특성 분석: 강원도와 경기도를 사례로', journal: '사회과학연구', publisher: '강원대학교 사회과학연구원', date: '2019-12', detail: '제58권, 제2호, 3~23' },
+      { no: 47, authors: '최충익 외 2명', solo: false, title: 'Impact of Nuclear Tests on Deforestation in North Korea using Google Earth-Based Spatial Images', journal: '인간식물환경학회지', publisher: '인간식물환경학회', date: '2019-12', detail: '제22권, 제6호, 563~573' },
+      { no: 48, authors: '최충익 외 2명', solo: false, title: '대규모 재난대응을 위한 지역사회 방재교육 전략 고찰', journal: '한국지적정보학회지', publisher: '한국지적정보학회', date: '2019-12', detail: '제21권, 제3호, 115~124' },
+      { no: 49, authors: '최충익 외 2명', solo: false, title: 'Factors Contributing to the Relationship between Driving Mileage and Crash Frequency of Older Drivers', journal: 'SUSTAINABILITY', publisher: 'MDPI AG', date: '2019-11', detail: '제11권, 제23호, 6643' },
+      { no: 50, authors: '최충익 외 3명', solo: false, title: 'Development of a Customer Friendly GIS-based Disaster Management System in South Korea', journal: 'Journal of Distribution Science', publisher: 'Korea Distribution Science Association (KODISA)', date: '2019-11', detail: '제17권, 제11호, 27~34' },
+      { no: 51, authors: '최충익, 김철민 외 1명', solo: false, title: 'Towards Sustainable Environmental Policy and Management in the Fourth Industrial Revolution: Evidence from Big Data Analytics', journal: 'The Journal of Asian Finance, Economics and Business', publisher: '한국유통과학회', date: '2019-08', detail: '' },
+      { no: 52, authors: '최충익, 최준호 외 1명', solo: false, title: '기후변화 국제협력 패러다임 변화에 따른 남북한 환경협력방안', journal: '한국지적정보학회지', publisher: '한국지적정보학회', date: '2019-08', detail: '제21권, 제2호, 190~197' },
+      { no: 53, authors: '최충익, 백민호, 최준호 외 1명', solo: false, title: '리스크 거버넌스 프레임워크(RGF)에 기반한 홍수대비 토지이용규제 합리화 방안', journal: '한국지적정보학회지', publisher: '한국지적정보학회', date: '2019-04', detail: '제21권, 제1호, 153~161' },
+      { no: 54, authors: '최충익 외 1명', solo: false, title: '공공임대주택 수요 및 편익 추정: 예술인 행복주택 건립 사업을 대상으로', journal: '감정평가학논집', publisher: '한국감정평가학회', date: '2019-04', detail: '제18권, 제1호, 75~100' },
+      { no: 55, authors: '최충익 외 1명', solo: false, title: "Spirituality's Impact on Posttraumatic Interpersonal Relation regarding the Distribution of Negative Affect", journal: 'Journal of Distribution Science', publisher: 'Korea Distribution Science Association (KODISA)', date: '2019-04', detail: '제17권, 제5호, 103~111' },
+      { no: 56, authors: '최충익, 최준호 외 1명', solo: false, title: 'Development and application of a sensemaking approach to community-based disaster risk governance', journal: 'The Journal of Asian Finance, Economics and Business', publisher: '한국유통과학회', date: '2019-02', detail: '제6권, 제1호, 289~301' },
+      { no: 57, authors: '최충익 외 1명', solo: false, title: 'Towards Sustainable Urban Spatial Structure: Does Decentralization Reduce Commuting Times?', journal: 'SUSTAINABILITY', publisher: 'MDPI AG', date: '2019-02', detail: '제11권, 제4호, 1012' },
+      { no: 58, authors: '최충익, 최준호', solo: false, title: '대도시 소방행정의 대규모 재난대응 전략과 함의', journal: '한국지적정보학회지', publisher: '한국지적정보학회', date: '2018-12', detail: '제20권, 제3호, 49~56' },
+      { no: 59, authors: '최충익, 최준호 외 1명', solo: false, title: '조류독감 지역방재력 비교사례연구: 지방자치단체 조례를 중심으로', journal: '한국지적정보학회지', publisher: '한국지적정보학회', date: '2018-12', detail: '제20권, 제3호, 133~144' },
+      { no: 60, authors: '최충익, 최준호', solo: false, title: '방재교육을 위한 실천공동체로써 전통향약의 활용과 시사점', journal: '한국방재학회논문집', publisher: '한국방재학회', date: '2018-10', detail: '제18권, 제6호, 69~78' },
+      { no: 61, authors: '최충익, 최준호', solo: false, title: '방재적 도시재생사업 활성화 방안연구: 주민참여를 중심으로', journal: '한국방재학회논문집', publisher: '한국방재학회', date: '2018-10', detail: '제18권, 제6호, 79~85' },
+      { no: 62, authors: '최충익, 최준호', solo: false, title: '대규모 재난대비를 위한 의용소방대 활용방안과 시사점', journal: '한국화재소방학회논문지', publisher: '한국화재소방학회', date: '2018-10', detail: '제32권, 제5호, 87~94' },
+      { no: 63, authors: '최충익, 김철민 외 3명', solo: false, title: '빅데이터 분석을 이용한 환경사무의 사회적 평가', journal: '환경정책', publisher: '한국환경정책학회', date: '2018-09', detail: '제26권, 제3호, 31~55' },
+      { no: 64, authors: '최충익 외 1명', solo: false, title: '대도시 역세권의 대형재난대응 혼잡대책 사례연구', journal: '한국지적정보학회지', publisher: '한국지적정보학회', date: '2018-08', detail: '제20권, 제2호, 121~132' },
+      { no: 65, authors: '최충익 외 1명', solo: false, title: '일본 대도시권 행정 BCP의 지진대응 전략과 함의', journal: '한국방재학회논문집', publisher: '한국방재학회', date: '2018-08', detail: '제18권, 제5호, 33~41' },
+      { no: 66, authors: '최충익 외 1명', solo: false, title: 'Development and distribution of risk governance framework in terms of socially viable solutions', journal: 'The Journal of Asian Finance, Economics and Business', publisher: '한국유통과학회', date: '2018-07', detail: '제5권, 제3호, 185~193' },
+      { no: 67, authors: '최충익 외 1명', solo: false, title: 'Distribution and application of community-based disaster risk information: Lessons from Shiga prefecture in Japan', journal: 'Journal of Distribution Science', publisher: 'Korea Distribution Science Association (KODISA)', date: '2018-06', detail: '제16권, 제6호, 15~23' },
+      { no: 68, authors: '최충익 외 1명', solo: false, title: '빅데이터 분석을 활용한 4차 산업혁명과 환경정책의 패러다임 탐색', journal: '한국지역개발학회지', publisher: '한국지역개발학회', date: '2018-06', detail: '제30권, 제2호, 25~46' },
+      { no: 69, authors: '최충익 외 1명', solo: false, title: '대규모 지진대비를 위한 학교방재교육 개선방안', journal: '한국방재학회논문집', publisher: '한국방재학회', date: '2018-06', detail: '제18권, 제4호, 57~64' },
+      { no: 70, authors: '최충익 외 1명', solo: false, title: 'BCP 관점의 일본 해양사고 재난관리와 정책적 시사점', journal: '한국지적정보학회지', publisher: '한국지적정보학회', date: '2018-04', detail: '제20권, 제1호, 81~96' },
+      { no: 71, authors: '최충익 외 1명', solo: false, title: '일본의 항만 비즈니스 연속성 계획(BCP) 도입 사례와 정책적 시사점', journal: '한국지적정보학회지', publisher: '한국지적정보학회', date: '2017-12', detail: '제19권, 제3호, 41~50' },
+      { no: 72, authors: '최충익 외 1명', solo: false, title: 'The 4th Industrial Revolution, Smart Cities, and Sustainable Urban Regeneration: A Perspective Study', journal: '환경정책', publisher: '한국환경정책학회', date: '2017-10', detail: '제25권, 61~91' },
+      { no: 73, authors: '최충익', solo: true, title: '빅데이터를 활용한 지진 위험정보의 사회적 확산 분석', journal: '한국지역개발학회지', publisher: '한국지역개발학회', date: '2017-09', detail: '제29권, 제3호, 181~200' },
+      { no: 74, authors: '최충익', solo: true, title: '재난이 경제성장에 미치는 영향: 솔로우 성장모형의 적용과 함의', journal: 'Crisisonomy', publisher: '위기관리 이론과 실천', date: '2017-06', detail: '제13권, 제6호, 69~83' },
+      { no: 75, authors: '최충익', solo: true, title: '지역의 재난발생특성에 관한 역사적 연구: 강원도 사례로', journal: '한국지적정보학회지', publisher: '한국지적정보학회', date: '2017-04', detail: '제19권, 제1호, 87~100' },
+      { no: 76, authors: '최충익', solo: true, title: '행위자 네트워크 이론(ANT)을 통한 미세먼지 정책의 이해', journal: 'Crisisonomy', publisher: '위기관리 이론과 실천', date: '2017-03', detail: '제13권, 제3호, 43~53' },
+      { no: 77, authors: '최충익', solo: true, title: 'Between-Group Analysis를 활용한 지역 R&D사업의 기업지원 효과분석', journal: '지역연구', publisher: '한국지역학회', date: '2016-12', detail: '제32권, 제4호, 3~18' },
+      { no: 78, authors: '최충익', solo: true, title: '미세먼지정책의 경로의존성과 위험의 사회적 확산', journal: '한국지역개발학회지', publisher: '한국지역개발학회', date: '2016-12', detail: '제28권, 제5호, 89~108' },
+      { no: 79, authors: '최충익', solo: true, title: 'Applications of SMCRE model on social amplification of MERS risk information and its implications', journal: 'Journal of Distribution Science', publisher: 'Korea Distribution Science Association (KODISA)', date: '2016-06', detail: '제14권, 제6호, 89~98' },
+      { no: 80, authors: '최충익', solo: true, title: 'Does economic growth really reduce disaster damages? Index decomposition analysis for the relationship between disaster damages, urbanization and economic growth and its implications', journal: 'International Journal of Urban Sciences', publisher: 'Taylor and Francis Ltd.', date: '2016-05', detail: '제20권, 제2호, 188~205' },
+      { no: 81, authors: '최충익', solo: true, title: 'Case study on the distribution of disaster risk information in China', journal: 'Journal of Distribution Science', publisher: 'Korea Distribution Science Association (KODISA)', date: '2016-04', detail: '제14권, 제4호, 55~66' },
+      { no: 82, authors: '최충익', solo: true, title: '위험의 사회적 증폭의 지역적 특성에 관한 사례연구', journal: '한국지적정보학회지', publisher: '한국지적정보학회', date: '2016-04', detail: '제18권, 제1호, 113~121' },
+      { no: 83, authors: '최충익', solo: true, title: '한국의 대형재난 발생 특성에 관한 역사적 연구', journal: 'Crisisonomy', publisher: '위기관리 이론과 실천', date: '2016-04', detail: '제12권, 제4호, 17~36' },
+      { no: 84, authors: '최충익', solo: true, title: '지역연구개발사업의 성과평가 방법론 개발과 적용', journal: '지역연구', publisher: '한국지역학회', date: '2015-12', detail: '제31권, 제4호, 71~90' },
+      { no: 85, authors: '최충익', solo: true, title: '대형 재난사고 이슈의 생존주기 분석', journal: '서울도시연구', publisher: '서울연구원', date: '2015-12', detail: '제16권, 제4호, 147~162' },
+      { no: 86, authors: '최충익', solo: true, title: '서울의 전염병 발생 특성에 관한 연구사적 고찰', journal: '위기관리이론과 실천', publisher: '위기관리 이론과 실천', date: '2015-09', detail: '제11권, 제9호, 119~134' },
+      { no: 87, authors: '최충익', solo: true, title: 'A Discourse on the Paradigm Shift of National Risk Management in Risk Society', journal: '한국지적정보학회지', publisher: '한국지적정보학회', date: '2015-08', detail: '제17권, 제2호, 37~45' },
+      { no: 88, authors: '최충익', solo: true, title: '위험사회의 국토안전관리에 관한 고찰', journal: '한국지적정보학회지', publisher: '한국지적정보학회', date: '2015-04', detail: '제17권, 제1호, 15~25' },
+      { no: 89, authors: '최충익 외 1명', solo: false, title: '개발과 안전이 만나는 곳: 호주 연안지역 도시개발 특징과 시사점', journal: '국토계획', publisher: '대한국토·도시계획학회', date: '2014-07', detail: '제49권, 제4호, 5~16' },
+      { no: 90, authors: '최충익', solo: true, title: '도시화와 재해피해 그리고 경제성장에 관한 지수분해분석', journal: '국토계획', publisher: '대한국토·도시계획학회', date: '2014-06', detail: '제49권, 제3호, 195~209' },
+      { no: 91, authors: '최충익', solo: true, title: '공간계획법과 환경관련법의 연계성에 관한 연결망 분석과 함의', journal: '환경정책연구', publisher: '한국환경정책평가연구원', date: '2014-06', detail: '제13권, 제2호, 39~63' },
+      { no: 92, authors: '최충익 외 1명', solo: false, title: '도시재해취약성 분석방법론의 적용과 함의', journal: '한국지역개발학회지', publisher: '한국지역개발학회', date: '2014-06', detail: '제26권, 제2호, 1~22' },
+      { no: 93, authors: '최충익', solo: true, title: '포아송 분포를 활용한 지역 위험도 분석과 함의', journal: '국토계획', publisher: '대한국토·도시계획학회', date: '2013-10', detail: '제48권, 제5호, 319~331' },
+      { no: 94, authors: '최충익', solo: true, title: 'Dynamic Climate Change Adaptation in Nomadic Lifestyle and its Implications', journal: '환경정책연구', publisher: '한국환경정책평가연구원', date: '2013-09', detail: '제12권, 제3호, 73~96' },
+      { no: 95, authors: '최충익', solo: true, title: '현대 서울의 재난·재해 발생 특성에 관한 역사적 연구', journal: '한국지역개발학회지', publisher: '한국지역개발학회', date: '2013-03', detail: '제25권, 제1호, 159~182' },
+      { no: 96, authors: '최충익 외 1명', solo: false, title: '기후변화 연구에 관한 사회연결망 분석과 함의', journal: '한국지역개발학회지', publisher: '한국지역개발학회', date: '2012-12', detail: '제24권, 제5호, 1~20' },
+      { no: 97, authors: '최충익', solo: true, title: 'INEXORABLE RISE OF GER IN MONGOLIA: DEMOLITION FOR REDEVELOPMENT OR CONSERVATION FOR IMPROVEMENT?', journal: 'International Review of Public Administration', publisher: '한국행정학회', date: '2012-08', detail: '제17권, 제2호, 121~141' },
+      { no: 98, authors: '최충익, 임의영', solo: false, title: '재해의연금 배분원칙과 모델링', journal: '한국행정학보', publisher: '한국행정학회', date: '2012-06', detail: '제46권, 제2호, 315~333' },
+      { no: 99, authors: '최충익 외 3명', solo: false, title: '연안도시 기후변화 적응을 위한 법제도적 고찰', journal: '도시행정학보', publisher: '한국도시행정학회', date: '2012-03', detail: '제25권, 제1호, 325~346' },
+      { no: 100, authors: '최충익', solo: true, title: '미디어 분석을 통한 재해의연금 배분 이슈 고찰', journal: '한국지역개발학회지', publisher: '한국지역개발학회', date: '2011-06', detail: '제23권, 제2호, 135~152' },
+      { no: 101, authors: '최충익 외 2명', solo: false, title: 'Development and application of a methodology for vulnerability assessment of climate change in coastal cities', journal: 'OCEAN & COASTAL MANAGEMENT', publisher: 'Elsevier Sci Ltd', date: '2011-06', detail: '제54권, 524~534' },
+      { no: 102, authors: '최충익', solo: true, title: '지방자치단체 기후변화 적응정책의 의사결정 과정과 함의', journal: '한국행정학보', publisher: '한국행정학회', date: '2011-03', detail: '제45권, 제1호, 257~274' },
+      { no: 103, authors: '최충익', solo: true, title: 'Does Urbanization Indeed Increase Disaster Damages? - Lessons from Gyeonggi Province, South Korea', journal: '환경정책연구', publisher: '한국환경정책평가연구원', date: '2010-09', detail: '제9권, 제3호, 3~27' },
+      { no: 104, authors: '최충익', solo: true, title: '도시가 재해 피해액 산정에 관한 기초연구', journal: '국토계획', publisher: '대한국토·도시계획학회', date: '2010-08', detail: '제45권, 제4호, 171~181' },
+      { no: 105, authors: '최충익 외 2명', solo: false, title: '지방자치단체 기후변화 적응정책의 특성 연구: 자연재해를 중심으로', journal: '한국지역개발학회지', publisher: '한국지역개발학회', date: '2010-04', detail: '제22권, 제1호, 67~86' },
+      { no: 106, authors: '최충익 외 1명', solo: false, title: 'Greenhouse Gas Emission Characteristics of Local Governments and its Implications in Climate Change Policy: the Case of Gyeonggi-Do', journal: '국토계획', publisher: '대한국토·도시계획학회', date: '2010-04', detail: '제45권, 제2호, 261~274' },
+      { no: 107, authors: '최충익', solo: true, title: 'Q방법론을 이용한 주민 환경갈등구조 분석 : 홍천 골프장 개발사업을 사례로', journal: '한국지역개발학회지', publisher: '한국지역개발학회', date: '2009-09', detail: '제21권, 제3호, 253~272' },
+      { no: 108, authors: '최충익', solo: true, title: '지방자치단체의 안전관리계획 활용성 분석', journal: '국토계획', publisher: '대한국토·도시계획학회', date: '2009-06', detail: '제44권, 제3호, 7~23' },
+      { no: 109, authors: '최충익 외 1명', solo: false, title: '환경규제의 분권화 효과 분석', journal: '국토계획', publisher: '대한국토·도시계획학회', date: '2009-02', detail: '제44권, 제1호, 259~272' },
+      { no: 110, authors: '최충익 외 1명', solo: false, title: 'DEA를 활용한 공공체육시설 효율성 분석', journal: '국토계획', publisher: '대한국토·도시계획학회', date: '2008-06', detail: '제43권, 제3호, 275~288' },
+      { no: 111, authors: '최충익 외 1명', solo: false, title: '대산읍 중심시가지 활성화에 관한 전문가 인식유형', journal: '국토계획', publisher: '대한국토·도시계획학회', date: '2007-10', detail: '제42권, 제5호, 95~107' },
+      { no: 112, authors: '최충익 외 1명', solo: false, title: '아파트 분양가격과 건설사 수익성간의 관계에 관한 연구', journal: '한국지역개발학회지', publisher: '한국지역개발학회', date: '2007-06', detail: '제19권, 제2호, 33~56' },
+      { no: 113, authors: '최충익 외 1명', solo: false, title: '전국 홍수위험도 평가의 국토도시계획적 함의', journal: '국토계획', publisher: '대한국토·도시계획학회', date: '2006-08', detail: '제41권, 제4호, 143~155' },
+      { no: 114, authors: '최충익 외 1명', solo: false, title: '환경적 측면에서 평가한 경제발전유형의 국제비교분석', journal: '환경정책', publisher: '한국환경정책학회', date: '2006-06', detail: '제14권, 제1호, 147~167' },
+      { no: 115, authors: '최충익 외 1명', solo: false, title: '지속가능한 경제정책을 위한 기초연구', journal: '한국정책학회지', publisher: '한국정책학회', date: '2006-06', detail: '제15권, 제2호, 109~129' },
+      { no: 116, authors: '최충익 외 1명', solo: false, title: '경제성장과 환경오염간의 관계에 대한 국제비교연구', journal: '국토계획', publisher: '대한국토·도시계획학회', date: '2006-02', detail: '제41권, 제1호, 153~166' },
+      { no: 117, authors: '최충익', solo: true, title: 'One-Way Error Component Regression Model을 활용한 도시지역 수재해 취약성 변화의 실증연구', journal: '환경정책연구', publisher: '한국환경정책평가연구원', date: '2004-12', detail: '제3권, 제2호, 89~112' },
+      { no: 118, authors: '최충익', solo: true, title: '패널모형에 의한 도시지역 수해결정요인 분석', journal: '국토계획', publisher: '대한국토·도시계획학회', date: '2004-12', detail: '제39권, 제7호, 49~67' },
+      { no: 119, authors: '최충익', solo: true, title: '수도권 도시지역의 자연재해취약성에 관한 실증분석', journal: '한국지역개발학회지', publisher: '한국지역개발학회', date: '2004-12', detail: '제16권, 제4호, 23~50' },
+      { no: 120, authors: '최충익', solo: true, title: '도시화에 따른 수해취약성에 관한 실증분석', journal: '국토연구', publisher: '국토연구원 (KRIHS)', date: '2004-09', detail: '제42권, 17~37' },
+      { no: 121, authors: '최충익 외 2명', solo: false, title: '지역환경정책에 대한 주민의 지지요소와 공분산구조모형에 관한 연구', journal: '국토계획', publisher: '대한국토·도시계획학회', date: '2004-04', detail: '제39권, 제2호, 203~221' },
+      { no: 122, authors: '최충익', solo: true, title: '도시적 토지이용의 변화가 도시의 자연재해 취약성에 미치는 영향에 관한 연구: 경기도를 사례로', journal: '국토계획', publisher: '대한국토·도시계획학회', date: '2003-04', detail: '제38권, 제2호, 35~48' }
+    ];
+
+    // All 142 Conferences / Forum Presentations from PDF (1 to 142)
+    const CONFERENCES_DATA = [
+      { no: 1, title: '한국지역학회 2026 전기학술대회', event: '한국지역학회 2026 전기학술대회', host: '한국지역학회', date: '2026-06-26', role: '' },
+      { no: 2, title: '한국지역개발학회 2026년 춘계학술대회', event: '한국지역개발학회 2026년 춘계학술대회', host: '한국지역개발학회', date: '2026-05-22', role: '' },
+      { no: 3, title: '데이터 공백과 통치의 공간성', event: '한국지역개발학회 2026년 춘계연합학술대회', host: '한국지역개발학회', date: '2026-05-22', role: '단독' },
+      { no: 4, title: '2026 춘계산학학술대회', event: '2026 춘계산학학술대회', host: '대한국토·도시계획학회', date: '2026-04-23', role: '' },
+      { no: 5, title: '생활인구 활성화 전략과 사례', event: '5극3특시대 강원특별자치도의 지방소멸대응전략', host: '대한국토·도시계획학회', date: '2025-11-29', role: '단독' },
+      { no: 6, title: '물과 국가의 거버넌스', event: '2025 기후변화 재난방재 토론회', host: '한국기후변화연구원', date: '2025-11-26', role: '단독' },
+      { no: 7, title: '동해안지역 물관리 혁신 심포지엄', event: '동해안지역 물관리 혁신 심포지엄', host: '강원특별자치도의회', date: '2025-11-18', role: '' },
+      { no: 8, title: '대한국토도시계획학회 추계학술대회', event: '대한국토·도시계획학회 추계학술대회', host: '대한국토·도시계획학회', date: '2025-10-31', role: '' },
+      { no: 9, title: '지방소멸대응전략 특별세미나', event: '지방소멸대응전략 특별세미나', host: '한국지방행정연구원', date: '2025-07-24', role: '' },
+      { no: 10, title: '대한국토도시계획학회 2025 춘계산학학술대회', event: '대한국토·도시계획학회 2025 춘계산학학술대회', host: '대한국토·도시계획학회', date: '2025-04-25', role: '' },
+      { no: 11, title: '한국환경정책학회 춘계학술대회', event: '한국환경정책학회 춘계학술대회', host: '한국환경정책학회', date: '2025-02-19', role: '' },
+      { no: 12, title: '2024년 충남연구원 연구성과발표회', event: '2024년 충남연구원 연구성과발표회', host: '충남연구원', date: '2024-12-19', role: '' },
+      { no: 13, title: '인구소멸과 강원특별자치도의 발전방안', event: '대한국토·도시계획학회 강원지회 추계학술세미나', host: '대한국토·도시계획학회', date: '2024-12-13', role: '단독' },
+      { no: 14, title: '2024 대한국토도시계획학회 추계학술대회', event: '2024 대한국토·도시계획학회 추계학술대회', host: '대한국토·도시계획학회', date: '2024-11-09', role: '' },
+      { no: 15, title: '2024 제17회 지속가능발전 강원대회', event: '2024 제17회 지속가능발전 강원대회', host: '강원특별자치도', date: '2024-11-06', role: '' },
+      { no: 16, title: '2024년 한국환경정책학회 추계학술대회', event: '2024년 한국환경정책학회 추계학술대회', host: '한국환경정책학회', date: '2024-10-30', role: '' },
+      { no: 17, title: '한국 근대사의 재난재해', event: '기후변화 재난방재토론회', host: '강원특별자치도', date: '2024-10-23', role: '단독' },
+      { no: 18, title: '전남특별자치도 출범을 위한 강원특별자치도 사례의 시사점', event: '전남지방소멸위기 극복포럼', host: '대한국토·도시계획학회', date: '2024-09-05', role: '단독' },
+      { no: 19, title: '2024 한국지방자치학회 동계학술대회', event: '2024 한국지방자치학회 동계학술대회', host: '한국지방자치학회', date: '2024-02-23', role: '' },
+      { no: 20, title: '강원특별법 후속 개정과 특구 전략 연계발전방안 모색 포럼', event: '강원특별법 후속 개정과 특구 전략 연계발전방안 모색 포럼', host: '강원연구원', date: '2023-11-29', role: '' },
+      { no: 21, title: '한국환경정책학회 30주년 정기학술대회', event: '한국환경정책학회 30주년 정기학술대회', host: '한국환경정책학회', date: '2023-10-31', role: '' },
+      { no: 22, title: '2023 대한지리학회 연례학술대회', event: '2023 대한지리학회 연례학술대회', host: '대한지리학회', date: '2023-06-23', role: '' },
+      { no: 23, title: '한국도시행정학회 학술대회', event: '한국도시행정학회', host: '한국도시행정학회', date: '2023-06-09', role: '' },
+      { no: 24, title: '2023 춘계학술대회', event: '2023 춘계학술대회', host: '대한국토·도시계획학회', date: '2023-04-26', role: '' },
+      { no: 25, title: '2023년 한국환경정책학회 추계학술대회', event: '2023년 한국환경정책학회 추계학술대회', host: '한국환경정책학회', date: '2023-02-25', role: '' },
+      { no: 26, title: '한국환경정책학회 2023년도 춘계학술대회', event: '한국환경정책학회 2023년도 춘계학술대회', host: '한국환경정책학회', date: '2023-02-25', role: '' },
+      { no: 27, title: '2023년 지방시대 공동전략 세미나', event: '2023년 지방시대 공동전략 세미나', host: '한국지역개발학회', date: '2023-02-24', role: '' },
+      { no: 28, title: '강원특별자치도와 환경규제 국회포럼', event: '강원특별자치도와 환경규제 국회포럼', host: '강원도, 강원연구원, 강원도민일보', date: '2022-12-28', role: '' },
+      { no: 29, title: '제5회 강원학대회', event: '제5회 강원학대회', host: '강원연구원', date: '2022-12-02', role: '' },
+      { no: 30, title: '지속가능한 발전목표 달성을 위한 환경정책연구 전문가 포럼', event: '지속가능한 발전목표 달성을 위한 환경정책연구 전문가 포럼', host: '한국환경정책학회', date: '2022-11-09', role: '' },
+      { no: 31, title: '지방소멸 위기대응 전략세미나', event: '지방소멸 위기대응 전략세미나', host: '한국지역개발학회', date: '2022-09-30', role: '' },
+      { no: 32, title: '2022년 한국환경정책학회 추계학술대회 (세션 1)', event: '2022년 한국환경정책학회 추계학술대회', host: '한국환경정책학회', date: '2022-09-23', role: '' },
+      { no: 33, title: '2022년 한국환경정책학회 추계학술대회 (세션 2)', event: '2022년 한국환경정책학회 추계학술대회', host: '한국환경정책학회', date: '2022-09-23', role: '' },
+      { no: 34, title: '강원도 근대사의 재난재해 관리', event: '2022 강원도민 기후재난 방재토론회', host: '한국기후변화연구원', date: '2022-07-28', role: '단독' },
+      { no: 35, title: '2021 추계학술대회', event: '2021 추계학술대회', host: '대한국토·도시계획학회', date: '2021-10-23', role: '' },
+      { no: 36, title: '기후변화 인식과 정책동향에 대한 빅데이터 분석', event: '2021년 한국환경정책학회 추계학술대회', host: '한국행정학회, 한국환경정책학회', date: '2021-10-08', role: '단독' },
+      { no: 37, title: '탄소중립시대 환경행정 전문가포럼', event: '탄소중립시대 환경행정 전문가포럼', host: '한국행정학회', date: '2021-09-15', role: '' },
+      { no: 38, title: 'Balanced Regional Development, Subscription Economy, and Capital City Relocation', event: 'KRDA International Seminar 2020', host: 'The Korean Regional Development Association', date: '2020-10-24', role: '' },
+      { no: 39, title: 'A Case Study on the Facilitation of Baby Boomer Migration to the Nonmetropolitan Area', event: 'The Korean Regional Development Association International Seminar in 2020', host: 'The Korean Regional Development Association', date: '2020-10-24', role: '주저자(교신저자)' },
+      { no: 40, title: 'Migration Characteristics of Baby Boomer Generation', event: 'The Korean Regional Development Association International Seminar in 2020', host: 'The Korean Regional Development Association', date: '2020-10-24', role: '주저자(교신저자)' },
+      { no: 41, title: '지방소멸위기지역지원 특별법제정을 위한 공청회', event: '지방소멸위기지역지원 특별법제정을 위한 공청회', host: '한국지방행정연구원', date: '2020-08-18', role: '' },
+      { no: 42, title: '지역발전을 위한 공간규제와 공유경제', event: '지역발전을 위한 공간규제와 공유경제', host: '대한국토·도시계획학회', date: '2020-02-21', role: '' },
+      { no: 43, title: '지역인구감소 대응방안모색을 위한 토론회', event: '지역인구감소 대응방안모색을 위한 토론회', host: '대통령직속 국가균형발전위원회', date: '2019-11-27', role: '' },
+      { no: 44, title: 'Korea Research Institute for Local Administration and Hanoi Architectural University Joint Seminar', event: 'KRILA-HAU Joint Seminar', host: '한국지방행정연구원', date: '2019-10-24', role: '' },
+      { no: 45, title: '스마트시티와 강원지역 발전전략', event: '스마트시티와 강원지역 발전전략', host: '대한국토·도시계획학회', date: '2019-06-28', role: '' },
+      { no: 46, title: '지방정부의 활성화 기법 및 영월군 발전전략', event: '영월군 발전전략 포럼', host: '영월군, 서울대학교, 백령행정학회', date: '2019-06-13', role: '단독' },
+      { no: 47, title: '2019 한국지방자치학회 춘계학술대회', event: '2019 한국지방자치학회 춘계학술대회', host: '한국지방자치학회', date: '2019-05-31', role: '' },
+      { no: 48, title: 'A study on the relationship between driving mileage and crash counts of older drivers', event: '2019년도 한국지역개발학회 춘계학술대회', host: '한국지역개발학회', date: '2019-05-17', role: '주저자(교신저자)' },
+      { no: 49, title: '개발규제가 거주지역 및 인근주민에게 미치는 영향', event: '2019년도 한국지역개발학회 춘계학술대회', host: '한국지역개발학회', date: '2019-05-17', role: '공저자' },
+      { no: 50, title: '북한 환경문제에 대한 협력방안 연구', event: '2019년도 한국지역개발학회 춘계학술대회', host: '한국지역개발학회', date: '2019-05-17', role: '주저자(교신저자)' },
+      { no: 51, title: '미세먼지 대응, 마스크가 전부인가', event: '2019 춘계산학학술대회', host: '대한국토·도시계획학회', date: '2019-04-27', role: '단독' },
+      { no: 52, title: '수도권 접경지역 규제 피해규모 산정과 대응방안', event: '제10회 고양시정포럼', host: '고양시정연구원', date: '2019-02-27', role: '단독' },
+      { no: 53, title: '2019 한국지역개발학회 동계학술대회', event: '2019 한국지역개발학회 동계학술대회', host: '한국지역개발학회', date: '2019-02-22', role: '' },
+      { no: 54, title: '2018 국토도시분야 10대뉴스 선정', event: '2018 국토도시분야 10대뉴스 선정', host: '대한국토·도시계획학회', date: '2019-02-18', role: '' },
+      { no: 55, title: '빅데이터를 활용한 물문화의 지역특성 분석: 강원도와 경기도를 사례로', event: '한국환경정책학회 추계학술대회', host: '한국환경정책학회', date: '2018-10-29', role: '단독' },
+      { no: 56, title: '환경사무 권한배분에 관한 빅데이터 분석', event: '2018 한국지역개발학회 동계학술대회', host: '한국지역개발학회', date: '2018-02-09', role: '단독' },
+      { no: 57, title: '환경문제 해결을 위한 중앙정부와 지방정부의 권한배분', event: '한국지역개발학회 등 36개 학회 공동학술대회', host: '지역발전위원회', date: '2018-01-25', role: '단독' },
+      { no: 58, title: '빅데이터를 활용한 한국의 위험문화', event: '사회과학연구원 공동세미나', host: '사회과학연구원', date: '2017-12-21', role: '주저자(제1저자)' },
+      { no: 59, title: '11th International Conference on Crisis and Emergency Management', event: '11th International Conference on Crisis and Emergency Management', host: 'ICCEM', date: '2017-12-16', role: '' },
+      { no: 60, title: '빅데이터를 이용한 한국의 위험문화 분석', event: '2017년 한국행정학회 동계학술대회', host: '한국행정학회', date: '2017-12-08', role: '주저자(제1저자)' },
+      { no: 61, title: '한국지역개발학회 30주년 기념 학술대회', event: '한국지역개발학회 30주년 기념 학술대회', host: '한국지역개발학회', date: '2017-12-02', role: '' },
+      { no: 62, title: 'Big Data를 활용한 한국의 위험문화 특성 고찰', event: '2017년 한국지역학회 후기학술대회', host: '한국지역학회', date: '2017-12-02', role: '주저자(제1저자)' },
+      { no: 63, title: '2017년 한국환경정책학회 추계학술대회', event: '2017년 한국환경정책학회 추계학술대회', host: '한국환경정책학회', date: '2017-11-03', role: '' },
+      { no: 64, title: '2017년 한국지역학회 전기학술대회', event: '2017년 한국지역학회 전기학술대회', host: '한국지역학회', date: '2017-06-23', role: '' },
+      { no: 65, title: '위험정보 사회적 확산의 빅데이터 분석', event: '한국지역개발학회 춘계학술대회', host: '한국지역개발학회', date: '2017-06-02', role: '주저자(교신저자)' },
+      { no: 66, title: '빅데이터를 활용한 지진발생 위험정보의 사회적 확산 분석', event: '대한국토·도시계획학회 2017 춘계산학학술대회', host: '대한국토·도시계획학회', date: '2017-04-29', role: '주저자(교신저자)' },
+      { no: 67, title: '대한국토도시계획학회 2017 춘계산학학술대회', event: '대한국토·도시계획학회 2017 춘계산학학술대회', host: '대한국토·도시계획학회', date: '2017-04-29', role: '' },
+      { no: 68, title: '한국지방자치학회 동계학술대회', event: '한국지방자치학회 동계학술대회', host: '한국지방자치학회', date: '2017-02-03', role: '' },
+      { no: 69, title: '국가연구개발사업의 성과평가에 관한 실증연구', event: '2016년 한국지역학회 후기학술대회', host: '한국지역학회', date: '2016-11-25', role: '주저자(제1저자)' },
+      { no: 70, title: '국가 및 지방자치단체 미세먼지정책의 경로의존성과 위험의 사회적 확산', event: '2016년 한국지역학회 후기학술대회', host: '한국지역학회', date: '2016-11-25', role: '주저자(교신저자)' },
+      { no: 71, title: '강원도 재난 특성에 관한 분석', event: '2016년 사회과학연구원 추계 학술대회', host: '강원대학교 사회과학연구원', date: '2016-11-17', role: '주저자(제1저자)' },
+      { no: 72, title: '2016년 한국지역개발학회 추계종합학술대회', event: '2016년 한국지역개발학회 추계종합학술대회', host: '한국지역개발학회', date: '2016-11-12', role: '' },
+      { no: 73, title: '2016년 대한국토도시계획학회 추계학술대회', event: '2016년 대한국토·도시계획학회 추계학술대회', host: '대한국토·도시계획학회', date: '2016-10-29', role: '' },
+      { no: 74, title: '2016년도 한국지역학회 전기학술대회', event: '2016년도 한국지역학회 전기학술대회', host: '한국지역학회', date: '2016-06-04', role: '' },
+      { no: 75, title: '2016 한국지역개발학회 춘계학술대회', event: '2016 한국지역개발학회 춘계학술대회', host: '한국지역개발학회', date: '2016-05-28', role: '' },
+      { no: 76, title: 'SMCRE 모형을 활용한 메르스 위험커뮤니케이션 분석과 함의', event: '2016 한국지역개발학회 춘계학술대회', host: '한국지역개발학회', date: '2016-05-28', role: '주저자(교신저자)' },
+      { no: 77, title: 'Between-Group 분석을 활용한 지역연구개발사업의 성과분석', event: '2016 한국지역개발학회 춘계학술대회', host: '한국지역개발학회', date: '2016-05-28', role: '주저자(교신저자)' },
+      { no: 78, title: '대한국토도시계획학회 2016 춘계산학학술대회', event: '대한국토·도시계획학회 2016 춘계산학학술대회', host: '대한국토·도시계획학회', date: '2016-04-30', role: '' },
+      { no: 79, title: 'Within 분석을 활용한 지역연구 개발사업의 성과평가', event: '대한국토·도시계획학회 2016 춘계산학학술대회', host: '대한국토·도시계획학회', date: '2016-04-30', role: '주저자(교신저자)' },
+      { no: 80, title: '행정학개론 (진로집중교육과정)', event: '2016학년도 진로집중교육과정', host: '봉의고등학교', date: '2016-03-02', role: '특강' },
+      { no: 81, title: '2016년도 한국지역개발학회 동계학술대회', event: '2016년도 한국지역개발학회 동계학술대회', host: '한국지역개발학회', date: '2016-02-22', role: '' },
+      { no: 82, title: '농어촌 삶의 질 향상 정책 대토론회', event: '농어촌 삶의 질 향상 정책 대토론회', host: '농림축산식품부, 한국농촌경제연구원', date: '2015-12-29', role: '' },
+      { no: 83, title: '춘계산학학술대회 (강원지회)', event: '춘계산학학술대회', host: '대한국토·도시계획학회 강원지회', date: '2015-12-28', role: '' },
+      { no: 84, title: 'Index decomposition analysis for the relationship between disaster damages, urbanization and economic growth and its implications', event: 'The present and future of urban management in northeast asia', host: 'Korean Urban Management Association', date: '2015-10-23', role: '단독' },
+      { no: 85, title: '강원안전포럼', event: '강원안전포럼', host: '강원발전연구원', date: '2015-08-25', role: '' },
+      { no: 86, title: '대한국토·도시계획학회 2015 춘계학술대회', event: '대한국토·도시계획학회 2015 춘계학술대회', host: '대한국토·도시계획학회', date: '2015-04-25', role: '' },
+      { no: 87, title: '대형재난사고의 이슈생존주기 분석', event: '대한국토·도시계획학회 2015 춘계산학학술대회', host: '대한국토·도시계획학회', date: '2015-04-25', role: '주저자(교신저자)' },
+      { no: 88, title: '2014 한국지적정보학회 추계학술대회', event: '2014 한국지적정보학회 추계학술대회', host: '한국지적정보학회, 서울특별시', date: '2014-12-12', role: '' },
+      { no: 89, title: '기후변화에 대응한 도시계획 최근 이슈', event: '도시환경에너지연구위원회 세미나', host: '대한국토·도시계획학회', date: '2013-06-08', role: '단독' },
+      { no: 90, title: '연결망분석을 통한 우리나라 환경법체계 연계성 검토', event: '2013 대한국토·도시계획학회 춘계산학학술대회', host: '대한국토·도시계획학회', date: '2013-04-27', role: '주저자(교신저자)' },
+      { no: 91, title: '환경법체계에 관한 연결망분석과 함의', event: '2013 한국행정학회 춘계학술대회', host: '한국행정학회', date: '2013-04-25', role: '주저자(제1저자)' },
+      { no: 92, title: '국가도시방재연구센터 개소 1주년 기념 국제세미나', event: '국가도시방재연구센터 개소 1주년 기념 국제세미나', host: '국토연구원', date: '2013-04-04', role: '' },
+      { no: 93, title: '새정부의 국정과제와 방향', event: '새정부의 국정과제와 방향', host: '서울행정학회', date: '2013-02-15', role: '' },
+      { no: 94, title: 'International Conference on Regional Disaster Management for Pyeongchang 2018 Winter Olympic Games', event: 'International Conference on Regional Disaster Management', host: 'The province of Gangwon', date: '2012-11-09', role: '' },
+      { no: 95, title: '강원발전계획 구상 워크샵', event: '강원발전계획 구상 워크샵', host: '대한국토·도시계획학회', date: '2012-08-07', role: '' },
+      { no: 96, title: 'What principles are principal in distributing the disaster relief fund? Lessons from the case study of South Korea', event: 'Regional Cooperation on Disaster Management in East Asia', host: 'The Japan Forum on International Relations', date: '2012-07-26', role: '단독' },
+      { no: 97, title: '2012년 행정학 하계공동학술대회', event: '2012년 행정학 하계공동학술대회', host: '한국행정학회', date: '2012-06-27', role: '' },
+      { no: 98, title: '친환경 동계올림픽 개최와 지역간 연계발전의 방향', event: '2012년 제1차 일자리행복 강원포럼', host: '2018평창동계올림픽대회조직위원회', date: '2012-06-01', role: '단독' },
+      { no: 99, title: '경기도 해양부문 기후변화 적응대책방안', event: '경기도 기후변화 적응대책 세부시행계획 워크샵', host: '경기도', date: '2012-02-08', role: '단독' },
+      { no: 100, title: '사회과학연구원 워크숍', event: '사회과학연구원 워크숍', host: '사회과학연구원', date: '2011-12-29', role: '' },
+      { no: 101, title: '평창동계올림픽 친환경 행정시스템구축과 지역간 연계발전 방안', event: '강원광역경제권 연계협력 활성화 토론회', host: '강원권 광역경제발전위원회', date: '2011-12-26', role: '단독' },
+      { no: 102, title: '한국행정학회 동계학술대회', event: '한국행정학회 동계학술대회', host: '한국행정학회', date: '2011-12-09', role: '' },
+      { no: 103, title: '한국행정학회 추계학술대회', event: '한국행정학회 추계학술대회', host: '한국행정학회', date: '2011-10-29', role: '' },
+      { no: 104, title: '해양 수산업 취약성 평가 및 적응과제', event: '경기도 기후변화 적응대책 세부시행계획 워크샵', host: '환경부, 경기개발연구원', date: '2011-10-11', role: '단독' },
+      { no: 105, title: '연안도시 기후변화 적응 가이드라인 개발', event: '2011년 연안재해취약성 평가체계구축 전문가 워크숍', host: '국립해양조사원', date: '2011-07-21', role: '단독' },
+      { no: 106, title: '2011년도 대한국토도시계획학회 세미나', event: '2011년도 대한국토·도시계획학회 세미나', host: '대한국토·도시계획학회 강원지회', date: '2011-07-15', role: '' },
+      { no: 107, title: '기후변화와 위기관리에 관한 심포지엄', event: '기후변화와 위기관리에 관한 심포지엄', host: '건국대학교 기후연구소', date: '2011-05-26', role: '' },
+      { no: 108, title: '대한국토 도시계획학회 춘계산학협동학술대회', event: '대한국토·도시계획학회 춘계산학협동학술대회', host: '대한국토·도시계획학회', date: '2011-04-30', role: '' },
+      { no: 109, title: '2010년 한국행정학회 동계학술대회', event: '2010년 한국행정학회 동계학술대회', host: '한국행정학회', date: '2010-12-10', role: '' },
+      { no: 110, title: '2010년 한국정책분석평가학회 동계학술대회', event: '2010년 한국정책분석평가학회 동계학술대회', host: '한국정책분석평가학회', date: '2010-12-04', role: '' },
+      { no: 111, title: '국가브랜드 제고를 위한 공직윤리와 인적자원개발', event: '국가브랜드 제고를 위한 공직윤리와 인적자원개발', host: '중앙공무원교육원', date: '2010-11-12', role: '' },
+      { no: 112, title: '행정학과 발전 대토론회', event: '행정학과 발전 대토론회', host: '백령행정학회', date: '2010-10-29', role: '' },
+      { no: 113, title: '물과 도시 - 캠프페이지와 의암호를 중심으로', event: '춘천국제물포럼', host: '춘천국제물포럼', date: '2010-10-29', role: '' },
+      { no: 114, title: 'Review of relief funds distribution system in Korea', event: 'The Second International Forum for Disaster Management', host: 'Korea Disaster Relief', date: '2010-10-25', role: '단독' },
+      { no: 115, title: '기후변화 적응형 연안도시 구축 가이드라인 개발', event: '해양기후변화 적응 워크숍', host: '해양환경관리공단', date: '2010-09-29', role: '단독' },
+      { no: 116, title: '강원도 디자인의 현재와 미래', event: '강원도 디자인의 현재와 미래', host: '강원발전연구원', date: '2010-06-17', role: '' },
+      { no: 117, title: 'KEI 기후변화연구 성과보고회', event: 'KEI 기후변화연구 성과보고회', host: '한국환경정책평가연구원', date: '2010-03-11', role: '' },
+      { no: 118, title: '기후변화와 강원도 녹색성장', event: '대한국토·도시계획학회 정기총회 및 세미나', host: '대한국토·도시계획학회 강원지회', date: '2010-02-04', role: '단독' },
+      { no: 119, title: '기후변화와 강원도의 녹색성장', event: '강원광역경제권 전문가 워크샵', host: '강원발전연구원', date: '2009-12-21', role: '단독' },
+      { no: 120, title: '광역교통망개선에 따른 춘천지역발전', event: '춘천지역발전 세미나', host: '춘천시 번영회', date: '2009-12-16', role: '' },
+      { no: 121, title: '방제 지휘체계 및 지침 개선방안', event: '서해 유류유출사고의 환경 대책 제15차 포럼 및 전문가 세미나', host: '한국환경정책평가연구원', date: '2009-12-14', role: '단독' },
+      { no: 122, title: '백령행정학회 동계학술 세미나', event: '백령행정학회 동계학술 세미나', host: '백령행정학회', date: '2009-12-07', role: '' },
+      { no: 123, title: '오송 첨단의료산업 기술진흥재단 세미나', event: '대한국토·도시계획학회 세미나', host: '대한국토·도시계획학회, 오송 첨단의료산업 기술진흥재단 준비단', date: '2009-11-25', role: '' },
+      { no: 124, title: '미래청정법인 횡성의 발전방향과 과제', event: '미래청정법인 횡성의 발전방향과 과제', host: '강원대학교 사회과학연구원', date: '2009-11-18', role: '' },
+      { no: 125, title: '가뭄피해액 산정기법', event: '방재포럼', host: '상지대학교 건설방재전문인력양성사업단, 대한토목학회', date: '2009-11-18', role: '단독' },
+      { no: 126, title: '태풍의 사회경제적 영향에 관한 워크숍', event: '태풍의 사회경제적 영향에 관한 워크숍', host: '기상청', date: '2009-08-21', role: '' },
+      { no: 127, title: '친환경적 수해관리 사례', event: '심포지움 - 물과 사회과학', host: '춘천국제물포럼', date: '2009-08-20', role: '단독' },
+      { no: 128, title: '기후변화와 대응전략', event: '삼성SDS U-city 세미나', host: '삼성SDS', date: '2009-08-13', role: '단독' },
+      { no: 129, title: '기후변화와 적응정책', event: '기후변화와 u-city워크샵', host: '청정강원21실천협의회', date: '2009-07-01', role: '단독' },
+      { no: 130, title: '도심하천복원에 따른 지역개발효과', event: '춘천시 발전을 위한 약사천 복원사업 공개토론회', host: '참여와 자치를 위한 춘천시민연대', date: '2009-06-22', role: '단독' },
+      { no: 131, title: '대한국토 도시계획학회 춘계산학협동 학술대회', event: '대한국토·도시계획학회 춘계산학협동 학술대회', host: '대한국토·도시계획학회', date: '2009-05-29', role: '' },
+      { no: 132, title: '동서고속화철도, 왜 절실한가', event: '동서고속화철도, 왜 절실한가', host: '송훈석 국회의원실', date: '2009-05-20', role: '' },
+      { no: 133, title: '기후변화포럼', event: '기후변화포럼', host: '한국기후변화대응연구센터', date: '2009-01-29', role: '' },
+      { no: 134, title: '동서고속화철도 조기건설을 위한 정책토론회', event: '동서고속화철도 조기건설을 위한 정책토론회', host: '속초시, 강원발전연구원', date: '2009-01-16', role: '' },
+      { no: 135, title: '대한국토도시계획학회 추계학술대회', event: '대한국토·도시계획학회 추계학술대회', host: '대한국토·도시계획학회', date: '2008-10-31', role: '' },
+      { no: 136, title: '소양강댐 관광자원의 가치와 지역경제활성화 방안에 관한 토론회', event: '소양강댐 관광자원의 가치와 지역경제활성화 방안에 관한 토론회', host: '춘천시발전연구회', date: '2008-10-28', role: '' },
+      { no: 137, title: '환경문제와 여성의 역할', event: '가평군 여성발전을 위한 토론회', host: '청정가평 지속가능발전협의회', date: '2008-10-17', role: '' },
+      { no: 138, title: '2008 International Conference on Crisis and Emergency Management', event: '2008 International Conference on Crisis and Emergency Management', host: 'International Society for Crisis and Emergency Management', date: '2008-10-16', role: '' },
+      { no: 139, title: '친환경적 수해관리정책 사례연구 - 토지이용을 중심으로', event: '기후변화에 대응한 수해관리의 새로운 패러다임', host: '시민환경연구소', date: '2008-10-02', role: '단독' },
+      { no: 140, title: '친환경적 수해관리방안', event: '사회과학연구원 학술대회', host: '사회과학연구원', date: '2008-05-21', role: '단독' },
+      { no: 141, title: '한국지방자치학회 춘계학술대회 2008', event: '한국지방자치학회 춘계학술대회 2008', host: '한국지방자치학회', date: '2008-05-16', role: '' },
+      { no: 142, title: '강원4대포럼 1차 정기포럼', event: '강원4대포럼 1차 정기포럼', host: '강원도, 강원발전연구원', date: '2008-04-15', role: '' }
+    ];
+
+    // =========================================================================
+    // 2. STATE & RENDERING LOGIC
+    // =========================================================================
+    let paperState = {
+      search: '',
+      period: 'all',
+      exactYear: null,
+      authorType: 'all',
+      visibleLimit: 20,
+      showAll: false
+    };
+
+    // Toast Utility (Replaces alert)
+    function showToast(msg) {
+      const box = document.getElementById('toast-box');
+      const text = document.getElementById('toast-message');
+      text.textContent = msg;
+      box.classList.remove('hidden');
+      clearTimeout(window.__toastTimer);
+      window.__toastTimer = setTimeout(() => {
+        box.classList.add('hidden');
+      }, 3000);
+    }
+
+    // Copy Profile Summary using document.execCommand('copy')
+    function copyProfileSummary() {
+      const summary = `[최충익 교수 프로필 요약 (2026년 11월 기준)]
+- 소속: 강원대학교 사회과학대학 행정학과 교수 (2008~현재) | 서울대학교 도시계획학 박사
+- 전문분야: 재난관리·리스크 거버넌스, 기후변화·기후정의, 도시·지역개발, 환경행정, ESG·지방공기업 성과관리, 빅데이터 정책분석
+- 생애업적: 학술논문 122편, 주요 저서·역서 18권, 학술대회·포럼 발표 142회, 연구보고서 7건
+- 주요서훈: 2026 대한민국학술원 우수학술도서(『환경과 재난 그리고 불평등』), 대통령 표창(2020), 국토교통부장관 표창(2020), 행정안전부장관 표창(2019), 제28회 과학기술우수논문상(2018)`;
+      const textarea = document.createElement('textarea');
+      textarea.value = summary;
+      textarea.style.position = 'fixed';
+      textarea.style.opacity = '0';
+      document.body.appendChild(textarea);
+      textarea.select();
+      try {
+        document.execCommand('copy');
+        showToast('최충익 교수 프로필 요약이 클립보드에 복사되었습니다.');
+      } catch (e) {
+        showToast('복사 기능을 실행할 수 없습니다.');
+      }
+      document.body.removeChild(textarea);
+    }
+
+    function togglePhotoGuide() {
+      const tip = document.getElementById('photo-guide-tooltip');
+      tip.classList.toggle('hidden');
+    }
+
+    // Render Books Grid
+    function renderBooks(filterType = 'all') {
+      const grid = document.getElementById('books-grid');
+      const filtered = BOOKS_DATA.filter(b => filterType === 'all' || b.type === filterType);
+      grid.innerHTML = filtered.map(b => {
+        const isAward = b.badge.includes('학술원');
+        return `
+          <div class="card-elevated rounded-2xl p-5 flex flex-col justify-between ${isAward ? 'ring-2 ring-amber-400/80 bg-amber-50/20' : ''}">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-2.5">
+                <span class="text-xs font-extrabold text-navy-800 bg-navy-50 px-2 py-0.5 rounded">#${String(b.no).padStart(2, '0')}</span>
+                <span class="text-xs font-medium text-slate-500">${b.date}</span>
+              </div>
+              ${b.badge ? `<div class="mb-2"><span class="inline-block px-2.5 py-0.5 rounded-full text-[11px] font-bold ${isAward ? 'bg-amber-400 text-navy-950' : 'bg-teal-50 text-teal-800 border border-teal-200/70'}">${b.badge}</span></div>` : ''}
+              <h4 class="text-sm sm:text-base font-bold text-navy-950 leading-snug">${b.title}</h4>
+              <p class="text-xs text-slate-600 mt-1.5">${b.authors}</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+              <span class="font-semibold text-navy-800">${b.publisher}</span>
+              <span class="text-slate-400">${b.category}</span>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function filterBooks(type) {
+      document.querySelectorAll('.book-filter-btn').forEach(btn => {
+        if (btn.dataset.bookFilter === type) {
+          btn.className = 'book-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-navy-900 text-white cursor-pointer';
+        } else {
+          btn.className = 'book-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 cursor-pointer';
+        }
+      });
+      renderBooks(type);
+    }
+
+    // Render Research Reports
+    function renderReports() {
+      const grid = document.getElementById('reports-grid');
+      grid.innerHTML = REPORTS_DATA.map(r => `
+        <div class="card-elevated rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="px-2.5 py-0.5 rounded-md text-xs font-bold bg-teal-50 text-teal-800">보고서 0${r.no}</span>
+              <span class="text-xs font-medium text-slate-500">${r.period}</span>
+            </div>
+            <h3 class="text-sm sm:text-base font-bold text-navy-950 leading-snug">“${r.title}”</h3>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">${r.desc}</p>
+          </div>
+          <div class="mt-3 pt-2.5 border-t border-slate-100 text-xs font-semibold text-navy-700">
+            발주·수행: ${r.org}
+          </div>
+        </div>
+      `).join('');
+    }
+
+    // Build Annual Publication Bar Chart (2003~2026)
+    function renderYearChart() {
+      const container = document.getElementById('year-chart-container');
+      const counts = {};
+      for (let y = 2003; y <= 2026; y++) counts[y] = 0;
+      PAPERS_DATA.forEach(p => {
+        const y = parseInt(p.date.slice(0, 4), 10);
+        if (counts[y] !== undefined) counts[y]++;
+      });
+      const years = Object.keys(counts).map(Number);
+      const maxCount = Math.max(...Object.values(counts), 1);
+
+      const barsHtml = years.map(y => {
+        const c = counts[y];
+        const heightPct = Math.round((c / maxCount) * 100);
+        const isSelected = paperState.exactYear === y;
+        const isRecent = y >= 2024;
+        const barColor = isSelected
+          ? 'bg-amber-500'
+          : (isRecent ? 'bg-teal-600 group-hover:bg-teal-500' : 'bg-navy-800 group-hover:bg-navy-600');
+
+        return `
+          <button type="button" onclick="toggleExactYear(${y})" title="${y}년: ${c}편 (클릭하여 필터링)" class="group flex flex-col items-center justify-end min-w-[28px] flex-1 h-32 pt-4 focus:outline-none cursor-pointer">
+            <span class="text-[10px] font-bold ${isSelected ? 'text-amber-700' : 'text-slate-600'} mb-1">${c > 0 ? c : ''}</span>
+            <div class="w-4 sm:w-5 rounded-t-md transition-all duration-300 ${barColor}" style="height: ${Math.max(heightPct * 0.72, c > 0 ? 8 : 2)}px;"></div>
+            <span class="mt-1.5 text-[10px] font-semibold ${isSelected ? 'text-amber-700 underline' : 'text-slate-500'}">${String(y).slice(2)}</span>
+          </button>
+        `;
+      }).join('');
+
+      container.innerHTML = `
+        <div class="flex items-end justify-between gap-1 min-w-[680px] px-2 pt-2 pb-1 bg-slate-50/70 rounded-xl border border-slate-100">
+          ${barsHtml}
+        </div>
+        ${paperState.exactYear ? `
+          <div class="mt-2 flex items-center justify-between text-xs bg-amber-50 text-amber-900 px-3 py-1.5 rounded-lg border border-amber-200">
+            <span><strong>${paperState.exactYear}년</strong> 게재 논문만 표시 중입니다.</span>
+            <button type="button" onclick="toggleExactYear(${paperState.exactYear})" class="font-bold underline cursor-pointer">연도 선택 해제</button>
+          </div>
+        ` : ''}
+      `;
+    }
+
+    function toggleExactYear(year) {
+      if (paperState.exactYear === year) {
+        paperState.exactYear = null;
+      } else {
+        paperState.exactYear = year;
+        paperState.period = 'all';
+        updatePeriodButtons('all');
+      }
+      renderYearChart();
+      applyPaperFilters();
+    }
+
+    function updatePeriodButtons(activePeriod) {
+      document.querySelectorAll('.period-btn').forEach(btn => {
+        if (btn.dataset.period === activePeriod) {
+          btn.className = 'period-btn active px-2.5 py-1.5 rounded-lg text-xs font-semibold bg-navy-900 text-white cursor-pointer';
+        } else {
+          btn.className = 'period-btn px-2.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 cursor-pointer';
+        }
+      });
+    }
+
+    function setPaperPeriod(period) {
+      paperState.period = period;
+      paperState.exactYear = null;
+      updatePeriodButtons(period);
+      renderYearChart();
+      applyPaperFilters();
+    }
+
+    function quickSearchPaper(keyword) {
+      const input = document.getElementById('paper-search-input');
+      input.value = keyword;
+      paperState.search = keyword;
+      document.getElementById('paper-search-clear').classList.remove('hidden');
+      applyPaperFilters();
+    }
+
+    function clearPaperSearch() {
+      const input = document.getElementById('paper-search-input');
+      input.value = '';
+      paperState.search = '';
+      document.getElementById('paper-search-clear').classList.add('hidden');
+      applyPaperFilters();
+    }
+
+    function resetAllPaperFilters() {
+      paperState = {
+        search: '',
+        period: 'all',
+        exactYear: null,
+        authorType: 'all',
+        visibleLimit: 20,
+        showAll: false
+      };
+      document.getElementById('paper-search-input').value = '';
+      document.getElementById('paper-search-clear').classList.add('hidden');
+      document.getElementById('paper-author-select').value = 'all';
+      updatePeriodButtons('all');
+      renderYearChart();
+      applyPaperFilters();
+    }
+
+    function applyPaperFilters() {
+      const query = document.getElementById('paper-search-input').value.trim().toLowerCase();
+      const authorFilter = document.getElementById('paper-author-select').value;
+      paperState.search = query;
+      paperState.authorType = authorFilter;
+
+      const clearBtn = document.getElementById('paper-search-clear');
+      if (query) clearBtn.classList.remove('hidden');
+      else clearBtn.classList.add('hidden');
+
+      const filtered = PAPERS_DATA.filter(p => {
+        const year = parseInt(p.date.slice(0, 4), 10);
+
+        if (paperState.exactYear !== null && year !== paperState.exactYear) return false;
+
+        if (paperState.exactYear === null && paperState.period !== 'all') {
+          const [startY, endY] = paperState.period.split('-').map(Number);
+          if (year < startY || year > endY) return false;
+        }
+
+        if (authorFilter === 'solo' && !p.solo) return false;
+        if (authorFilter === 'co' && p.solo) return false;
+
+        if (query) {
+          const haystack = `${p.no} ${p.authors} ${p.title} ${p.journal} ${p.publisher} ${p.date} ${p.detail}`.toLowerCase();
+          if (!haystack.includes(query)) return false;
+        }
+        return true;
+      });
+
+      document.getElementById('paper-filtered-count').textContent = filtered.length;
+
+      const listEl = document.getElementById('papers-list');
+      if (filtered.length === 0) {
+        listEl.innerHTML = `
+          <div class="py-12 text-center space-y-2">
+            <p class="text-sm font-bold text-slate-700">조건에 일치하는 학술논문이 없습니다.</p>
+            <p class="text-xs text-slate-500">다른 검색어나 연도 필터를 선택해 보세요.</p>
+          </div>
+        `;
+        document.getElementById('papers-pagination-bar').classList.add('hidden');
+        return;
+      }
+
+      const toRender = paperState.showAll ? filtered : filtered.slice(0, paperState.visibleLimit);
+
+      listEl.innerHTML = toRender.map(p => {
+        const isIntl = /^[A-Za-z]/.test(p.title.trim());
+        return `
+          <article class="py-4 px-2 hover:bg-slate-50/90 rounded-xl transition flex flex-col sm:flex-row sm:items-start justify-between gap-3">
+            <div class="flex items-start gap-3.5">
+              <span class="shrink-0 w-9 h-7 rounded-lg bg-navy-50 text-navy-800 text-xs font-extrabold flex items-center justify-center mt-0.5">
+                ${p.no}
+              </span>
+              <div class="space-y-1">
+                <div class="flex flex-wrap items-center gap-1.5">
+                  <span class="px-2 py-0.5 rounded text-[11px] font-bold ${p.solo ? 'bg-teal-50 text-teal-800' : 'bg-slate-100 text-slate-700'}">
+                    ${p.solo ? '단독' : '공저'}
+                  </span>
+                  <span class="px-2 py-0.5 rounded text-[11px] font-medium ${isIntl ? 'bg-indigo-50 text-indigo-700' : 'bg-navy-50 text-navy-700'}">
+                    ${isIntl ? 'English' : '국문'}
+                  </span>
+                  <span class="text-xs font-semibold text-teal-700">${p.journal}</span>
+                  <span class="text-xs text-slate-400">· ${p.publisher}</span>
+                </div>
+                <h4 class="text-sm sm:text-[15px] font-bold text-navy-950 leading-snug">
+                  ${p.title}
+                </h4>
+                <p class="text-xs text-slate-600">
+                  저자: <strong class="font-semibold text-slate-800">${p.authors}</strong>
+                  ${p.detail ? `<span class="text-slate-400 mx-1.5">|</span><span>${p.detail}</span>` : ''}
+                </p>
+              </div>
+            </div>
+            <div class="shrink-0 self-end sm:self-center">
+              <span class="inline-block px-2.5 py-1 rounded-lg bg-slate-100 text-navy-900 text-xs font-bold">
+                ${p.date}
+              </span>
+            </div>
+          </article>
+        `;
+      }).join('');
+
+      // Pagination bar visibility
+      const pagBar = document.getElementById('papers-pagination-bar');
+      const loadMoreBtn = document.getElementById('btn-load-more-papers');
+      const showAllBtn = document.getElementById('btn-show-all-papers');
+
+      if (filtered.length <= 20) {
+        pagBar.classList.add('hidden');
+      } else {
+        pagBar.classList.remove('hidden');
+        if (paperState.showAll || paperState.visibleLimit >= filtered.length) {
+          loadMoreBtn.classList.add('hidden');
+        } else {
+          loadMoreBtn.classList.remove('hidden');
+          const remain = filtered.length - paperState.visibleLimit;
+          loadMoreBtn.textContent = `논문 ${Math.min(20, remain)}편 더 보기 (${paperState.visibleLimit}/${filtered.length})`;
+        }
+        showAllBtn.textContent = paperState.showAll ? '목록 접기 (20편만 보기)' : `${filtered.length}편 전체 펼쳐보기`;
+      }
+    }
+
+    function loadMorePapers() {
+      paperState.visibleLimit += 20;
+      applyPaperFilters();
+    }
+
+    function toggleShowAllPapers() {
+      paperState.showAll = !paperState.showAll;
+      if (!paperState.showAll) paperState.visibleLimit = 20;
+      applyPaperFilters();
+    }
+
+    // Render & Filter 142 Conferences
+    function applyConferenceFilters() {
+      const query = document.getElementById('conf-search-input').value.trim().toLowerCase();
+      const period = document.getElementById('conf-year-select').value;
+
+      const filtered = CONFERENCES_DATA.filter(c => {
+        const year = parseInt(c.date.slice(0, 4), 10);
+        if (period !== 'all') {
+          const [s, e] = period.split('-').map(Number);
+          if (year < s || year > e) return false;
+        }
+        if (query) {
+          const hay = `${c.no} ${c.title} ${c.event} ${c.host} ${c.date} ${c.role}`.toLowerCase();
+          if (!hay.includes(query)) return false;
+        }
+        return true;
+      });
+
+      document.getElementById('conf-filtered-count').textContent = filtered.length;
+      const listEl = document.getElementById('conferences-list');
+
+      if (filtered.length === 0) {
+        listEl.innerHTML = `<div class="py-10 text-center text-sm text-slate-500">검색 조건에 해당하는 학술대회·포럼 이력이 없습니다.</div>`;
+        return;
+      }
+
+      listEl.innerHTML = filtered.map(c => `
+        <div class="py-3 px-2 hover:bg-slate-50 rounded-lg transition flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+          <div class="flex items-start gap-3">
+            <span class="shrink-0 w-8 h-6 rounded bg-slate-100 text-slate-700 text-[11px] font-bold flex items-center justify-center mt-0.5">${c.no}</span>
+            <div>
+              <div class="flex flex-wrap items-center gap-1.5">
+                <span class="text-sm font-bold text-navy-950">${c.title}</span>
+                ${c.role ? `<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-teal-50 text-teal-800 border border-teal-200/60">${c.role}</span>` : ''}
+              </div>
+              <p class="text-xs text-slate-500 mt-0.5">${c.event} &nbsp;·&nbsp; <span class="text-slate-700 font-medium">${c.host}</span></p>
+            </div>
+          </div>
+          <span class="shrink-0 text-xs font-semibold text-navy-700 bg-navy-50/70 px-2.5 py-1 rounded-md self-end sm:self-center">
+            ${c.date}
+          </span>
+        </div>
+      `).join('');
+    }
+
+    // Subtle KPI Count-up Animation on Load
+    function animateKPIs() {
+      document.querySelectorAll('.kpi-number').forEach(el => {
+        const target = parseInt(el.dataset.target, 10);
+        const suffix = el.dataset.suffix || '';
+        const duration = 900;
+        const startTime = performance.now();
+
+        function step(now) {
+          const progress = Math.min((now - startTime) / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          const current = Math.round(target * eased);
+          el.textContent = `${current}${suffix}`;
+          if (progress < 1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+      });
+    }
+
+    // Active Navigation Highlight on Scroll
+    function setupScrollSpy() {
+      const sections = ['overview', 'career', 'research-areas', 'books', 'papers', 'conferences'];
+      const navLinks = document.querySelectorAll('[data-nav]');
+
+      window.addEventListener('scroll', () => {
+        const scrollPos = window.scrollY + 130;
+        let currentId = 'overview';
+        sections.forEach(id => {
+          const sec = document.getElementById(id);
+          if (sec && sec.offsetTop <= scrollPos) {
+            currentId = id;
+          }
+        });
+        navLinks.forEach(link => {
+          if (link.dataset.nav === currentId) {
+            link.classList.add('active');
+          } else {
+            link.classList.remove('active');
+          }
+        });
+      }, { passive: true });
+    }
+
+    // Initialize Everything on DOMContentLoaded
+    document.addEventListener('DOMContentLoaded', () => {
+      renderBooks('all');
+      renderReports();
+      renderYearChart();
+      applyPaperFilters();
+      applyConferenceFilters();
+      animateKPIs();
+      setupScrollSpy();
+
+      document.getElementById('paper-search-input').addEventListener('input', applyPaperFilters);
+      document.getElementById('conf-search-input').addEventListener('input', applyConferenceFilters);
+    });
+  </script>
+</body>
+</html>
